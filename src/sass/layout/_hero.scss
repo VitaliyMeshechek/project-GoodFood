@@ -1,3 +1,4 @@
+$Button-green: #BBF330;
 
 h1,
 h2,
@@ -23,18 +24,20 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
+
 .hero {
+    position: relative;
 
     color: #2c2c2c;
     min-width: 320px;
     margin-right: auto;
     margin-left: auto;
     padding: 60px 20px 50px;
-    background-color: tomato;
+    // background-color: tomato;
 
     @media screen and (min-width:480px) {
         width: 480px;
-        background-color: aqua;
+        // background-color: aqua;
     }
 
     @media screen and (min-width:768px) {
@@ -42,19 +45,21 @@ body {
         padding: 60px 32px 0px;
 
 
-        background-color: antiquewhite;
+        // background-color: antiquewhite;
 
     }
 
-    @media screen and (min-width:1200px) {
-        width: 1200px;
-        padding: 159px 16px 0px;
+    @media screen and (min-width:1280px) {
+        width: 1280px;
+        padding: 0px 16px;
+        
     }
 
-    &__descr {
-        background-color: hotpink;
-
-    }
+    // &__descr {
+        
+    //     background-color: hotpink;
+        
+    // }
 
     &__title {
         font-weight: 700;
@@ -62,6 +67,7 @@ body {
         line-height: 1.17;
         width: 280px;
         margin-bottom: 28px;
+        
 
         // margin-right: auto;
         // margin-left: auto;
@@ -69,10 +75,10 @@ body {
             width: 537px;
             font-size: 42px;
             line-height: 1.19;
-            margin-bottom: 44px;
+            margin-bottom: 42px;
         }
 
-        @media screen and (min-width:1200px) {
+        @media screen and (min-width:1280px) {
             width: 503px;
             font-size: 48px;
             line-height: 1.2;
@@ -94,7 +100,7 @@ body {
             margin-bottom: 40px;
         }
 
-        @media screen and (min-width:1200px) {
+        @media screen and (min-width:1280px) {
             width: 502px;
 
             margin-bottom: 40px;
@@ -107,26 +113,48 @@ body {
         line-height: 1.5;
         width: 100px;
         height: 32px;
-        background: #BBF330;
+        background: $Button-green;
         border-radius: 30px;
         border: transparent;
     }
 
     &__container {
+        @media screen and (min-width:1280px)
+    {
         display: flex;
+        align-items: center;
 
     }
+}
 
     &__slider {
         @media screen and (max-width:767px) {
             display: none;
         }
+        // background-color: slateblue;
 
-        height: 100px;
-        width: 100px;
-        background-color: slateblue;
-
+        @media screen and (min-width:1280px)
+    {
         margin-left: auto;
 
     }
+    @media screen and (max-width:1279px){
+position: absolute;
+top: 149px;
+right: 40px;}
+
+    }
+}
+.slider__img { 
+    border: 14px solid #FFE550;
+    border-radius: 50%;
+    @media screen and (min-width:768px) {
+        width: 292px
+    }
+
+    @media screen and (min-width:1280px) {
+        width: 584px;
+        border: 26px solid #FFE550;
+    }
+
 }
