@@ -1,0 +1,163 @@
+$Button-green: #BBF330;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: center;
+    object-position: center;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+
+.hero {
+    position: relative;
+
+    color: #2c2c2c;
+    min-width: 320px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 60px 20px 50px;
+    // background-color: tomato;
+
+    @media screen and (min-width:480px) {
+        width: 480px;
+        // background-color: aqua;
+    }
+
+    @media screen and (min-width:768px) {
+        width: 768px;
+        padding: 60px 32px 0px;
+
+
+        // background-color: antiquewhite;
+
+    }
+
+    @media screen and (min-width:1280px) {
+        width: 1280px;
+        padding: 0px 16px;
+
+    }
+
+    // &__descr {
+
+    //     background-color: hotpink;
+
+    // }
+
+    &__title {
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 1.17;
+        width: 280px;
+        margin-bottom: 28px;
+
+
+        // margin-right: auto;
+        // margin-left: auto;
+        @media screen and (min-width:768px) {
+            width: 537px;
+            font-size: 42px;
+            line-height: 1.19;
+            margin-bottom: 42px;
+        }
+
+        @media screen and (min-width:1280px) {
+            width: 503px;
+            font-size: 48px;
+            line-height: 1.2;
+            margin-bottom: 28px;
+        }
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.5;
+        margin-bottom: 28px;
+        min-width: 266px;
+
+        @media screen and (min-width:768px) {
+            width: 336px;
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 40px;
+        }
+
+        @media screen and (min-width:1280px) {
+            width: 502px;
+
+            margin-bottom: 40px;
+        }
+    }
+
+    &__btn-order {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.5;
+        width: 100px;
+        height: 32px;
+        background: $Button-green;
+        border-radius: 30px;
+        border: transparent;
+    }
+
+    &__container {
+        @media screen and (min-width:1280px) {
+            display: flex;
+            align-items: center;
+
+        }
+    }
+
+    &__slider {
+        @media screen and (max-width:767px) {
+            display: none;
+        }
+
+        // background-color: slateblue;
+
+        @media screen and (min-width:1280px) {
+            margin-left: auto;
+
+        }
+
+        @media screen and (max-width:1279px) {
+            position: absolute;
+            top: 149px;
+            right: 40px;
+        }
+
+    }
+}
+
+.slider__img {
+    border: 14px solid #FFE550;
+    border-radius: 50%;
+
+    @media screen and (min-width:768px) {
+        width: 292px
+    }
+
+    @media screen and (min-width:1280px) {
+        width: 584px;
+        border: 26px solid #FFE550;
+    }
+
+}
