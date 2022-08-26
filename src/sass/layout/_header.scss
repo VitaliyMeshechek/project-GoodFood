@@ -1,0 +1,102 @@
+// $Black-text: #2C2C2C;
+
+.header{
+    margin-bottom: 72px;
+    display: flex;
+    justify-content: center;
+}
+
+.header__conteiner{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 72px;
+    position: absolute;
+    top: 0;
+
+    @media screen and (min-width: 480px)  {
+        width: 480px;    
+    }
+
+    @media screen and (min-width: 768px)  {
+        width: 768px;    
+    }
+
+    @media screen and (min-width: 1280px)  {
+        width: 1200px;  
+    }
+}
+
+.header__logo {
+    display: inline-flex;
+     width: 71px;
+     height: 52px;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+    margin-right: auto;
+}
+
+.nav{
+    display: flex;
+}
+
+.nav__list{
+    list-style: none;
+    flex-direction: column;
+
+    @media screen and (min-width: 768px)  {
+        flex-direction: row;
+        gap: 28px;
+    }
+
+}
+
+
+.nav__link{
+    display: inline-flex ;
+    color: inherit;
+    text-decoration: none;
+    color: $Black-text;
+    height: 50px;
+    width: 130px;
+    padding: 16px 10px 16px 16px;
+    
+        @media screen and (min-width: 768px) {
+            height: auto;
+            width: auto;
+            padding: 0px;
+        }
+
+    &:hover,
+    &:focus{
+        background-color: $Button-green;
+            
+            @media screen and (min-width: 768px) {
+            background-color: white;
+            color: $Button-green;
+            text-decoration: underline;
+        }
+
+    }
+    
+}
+
+.place-for-btn{
+    background-color: aqua;
+
+    @media screen and (min-width: 768px) {
+            margin-left: 28px;
+            width: 100px;
+            height: 32px;
+        }
+}
+
+.hide__nav-mobile {
+    display: none;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+    }
+
+}
