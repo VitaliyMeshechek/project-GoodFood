@@ -1,0 +1,130 @@
+.favorites {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: $tablet) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.18;
+    text-align: center;
+
+    @media screen and (min-width: $tablet) {
+      font-size: 42px;
+      line-height: 1.17;
+    }
+  }
+
+  &__text {
+    margin-bottom: 60px;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+
+    @media screen and (min-width: $tablet) {
+      font-size: 16px;
+      line-height: 1.19;
+    }
+
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__list {
+    @extend %list;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: $indent;
+    @media screen and (min-width: $tablet) {
+      $indent: 32px;
+      gap: $indent;
+    }
+  }
+
+  &__item {
+    $indent: 32px;
+
+    &:nth-child(n + 4) {
+      display: none;
+    }
+
+    @media screen and (min-width: $tablet) {
+      $items: 2;
+      width: calc((100% - ($indent) * (($items) - 1)) / ($items));
+
+      &:nth-child(n + 4) {
+        display: block;
+      }
+    }
+
+    @media screen and (min-width: $desktop) {
+      width: calc((100% - ($indent) * (($items) - 1)) / ($items));
+    }
+  }
+
+  &__link {
+    @extend %link;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 280px;
+    height: 282px;
+
+    background-color: $White;
+
+    border: 11px solid $Primary-yellow-main;
+    border-radius: 139.658px;
+    transition: border $cubic, color $cubic;
+
+    &:hover,
+    &:focus {
+      border: 11px solid $Button-green;
+
+      @media screen and (min-width: $tablet) {
+        border: 14px solid $Button-green;
+      }
+
+      @media screen and (min-width: $desktop) {
+        border: 16px solid $Button-green;
+      }
+    }
+    @media screen and (min-width: $tablet) {
+      width: 336px;
+      height: 338px;
+      border: 14px solid $Primary-yellow-main;
+      border-radius: 167.166px;
+    }
+    @media screen and (min-width: $desktop) {
+      width: 395px;
+      height: 397px;
+      border: 16px solid $Primary-yellow-main;
+      border-radius: 197.5px;
+    }
+  }
+
+  &__photo {
+    width: 224px;
+    height: 224px;
+    border-radius: 116.323px;
+    @media screen and (min-width: $tablet) {
+      width: 268px;
+      height: 268px;
+      border-radius: 139.588px;
+    }
+    @media screen and (min-width: $desktop) {
+      width: 315px;
+      height: 315px;
+      border-radius: 164.5px;
+    }
+  }
+}
