@@ -1,0 +1,12 @@
+.ftr{
+    padding: 100px 0;
+    
+    @media screen and (min-width: $desktop ) {
+        padding: 60px;
+    }
+}
+
+.ftr__mobile-wrap{
+    display: flex;
+
+}

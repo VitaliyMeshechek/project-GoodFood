@@ -1,21 +1,46 @@
 <footer class="ftr">
   <div class="container">
-    <a href="#" class="ftr__link %link">
-      <svg class="ftr__" width="66" height="52">
-        <use href="./images/Icons/icons.svg#logo"></use>
-      </svg>
-    </a>
-    <nav class="nav">
-      <ul class="nav__list">
-        <li class="nav__item"><a class="nav__link"></a>Home</li>
-        <li class="nav__item"><a class="nav__link"></a>About</li>
-        <li class="nav__item"><a class="nav__link"></a>Service</li>
-        <li class="nav__item"><a class="nav__link"></a>Menu</li>
-        <li class="nav__item"><a class="nav__link"></a>Contact</li>
+    <div class="ftr__content-wrap">
+      <div class="ftr__mobile-wrap">
+        <svg class="ftr__logo logo" width="66" height="52">
+          <use href="./images/Icons/icons.svg#logo"></use>
+        </svg>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item"><a class="nav__link"></a>Home</li>
+            <li class="nav__item"><a class="nav__link"></a>About</li>
+            <li class="nav__item"><a class="nav__link"></a>Service</li>
+            <li class="nav__item"><a class="nav__link"></a>Menu</li>
+            <li class="nav__item"><a class="nav__link"></a>Contact</li>
+          </ul>
+        </nav>
+      </div>
+      <form class="sbscr-form">
+        <strong class="sbscr-form__title">Subscribe</strong>
+        <label class="sbscr-form__wrap">
+          <input
+            class="sbscr-form__input"
+            type="email"
+            name="email"
+            placeholder="Enter your email"
+          />
+          <button class="sbscr__btn" type="submit">Subscribe</button>
+        </label>
+        <p class="sbscr-form__text">
+          By subscribing you agree to with our
+          <a class="sbscr-form__link" href="#">Privacy Policy</a>
+        </p>
+      </form>
+    </div>
+    <div class="secondary-content">
+      <ul class="secondary-content__list">
+        <li class="secondary-content__item">Privacy Policy</li>
+        <li class="secondary-content__item">Terms of Service</li>
+        <li class="secondary-content__item">Cookies Settings</li>
       </ul>
-    </nav>
-    <form class="ftr__form">
-      <strong class="ftr__form-title">Subscribe</strong>
-    </form>
+      <span class="secondary-content__text"
+        >2022 FoodSta. All right reserved.</span
+      >
+    </div>
   </div>
 </footer>

@@ -1,6 +1,6 @@
 // Utils
 @import './utils/utility-class';
-@import './utils/veriables';
+@import './utils/variables';
 @import '~node_modules/modern-normalize/modern-normalize.css';
 
 // Base
@@ -11,6 +11,7 @@
 @import './components/button';
 @import './components/container';
 @import './components/mixins';
+@import './components/sbscr-form';
 
 // Layout
 @import './layout/header';
