@@ -1,7 +1,7 @@
 // $Black-text: #2C2C2C;
 
 .header{
-    margin-bottom: 72px;
+    height: 72px;
     display: flex;
     justify-content: center;
 }
@@ -23,7 +23,7 @@
     }
 
     @media screen and (min-width: 1280px)  {
-        width: 1200px;  
+        width: 1280px;  
     }
 }
 
