@@ -1,29 +1,5 @@
 
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-    margin: 0;
-}
-
-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    -o-object-fit: cover;
-    object-fit: cover;
-    -o-object-position: center;
-    object-position: center;
-}
-
-body {
-    font-family: "Roboto", sans-serif;
-}
-
 
 .hero {
     position: relative;
@@ -36,7 +12,7 @@ body {
     &__title {
         font-weight: 700;
         font-size: 28px;
-        line-height: 1.17;
+        line-height: 1.18;
         width: 280px;
         margin-bottom: 28px;
 
@@ -53,7 +29,7 @@ body {
         @media screen and (min-width: $desktop) {
             width: 503px;
             font-size: 48px;
-            line-height: 1.2;
+            line-height: 1.21;
             margin-bottom: 28px;
         }
     }
@@ -120,7 +96,7 @@ body {
     }
 
     @media screen and (min-width: $desktop) {
-        width: 584px;
+        width: 528px;
         border: 26px solid $Primary-yellow-main;
     }}
 &-btn{
@@ -130,7 +106,6 @@ body {
     border: transparent;
     border-radius: 4px;
     background-color: $White;
-    border-radius: 4px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
     position: absolute;
 
@@ -143,6 +118,7 @@ body {
     @media screen and (min-width: $desktop){
     width: 48px;
     height: 40px;
+    border-radius: 8px;
     transition:fill $cubic;
     
         &:hover{
