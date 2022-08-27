@@ -12,6 +12,6 @@
 
     transition: background-color $cubic;
     &:hover, &:focus{
-    background-color:#B5FF00;
+    background-color:$Button-light-green;
     }
 }
