@@ -44,19 +44,23 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    gap: $indent;
     @media screen and (min-width: $tablet) {
-      gap: 32px;
+      $indent: 32px;
+      gap: $indent;
     }
   }
 
   &__item {
+    $indent: 32px;
+
     &:nth-child(n + 4) {
       display: none;
     }
 
     @media screen and (min-width: $tablet) {
-      width: calc((100% - 32px) / 2);
+      $items: 2;
+      width: calc((100% - ($indent) * (($items) - 1)) / ($items));
 
       &:nth-child(n + 4) {
         display: block;
@@ -64,7 +68,7 @@
     }
 
     @media screen and (min-width: $desktop) {
-      width: calc((100% - 64px) / 3);
+      width: calc((100% - ($indent) * (($items) - 1)) / ($items));
     }
   }
 
@@ -100,7 +104,7 @@
       border: 14px solid $Primary-yellow-main;
       border-radius: 167.166px;
     }
-    @media screen and (min-width: $dekctop) {
+    @media screen and (min-width: $desktop) {
       width: 395px;
       height: 397px;
       border: 16px solid $Primary-yellow-main;
@@ -115,12 +119,12 @@
     @media screen and (min-width: $tablet) {
       width: 268px;
       height: 268px;
-      border-radius: 133.648px;
+      border-radius: 139.588px;
     }
     @media screen and (min-width: $desktop) {
       width: 315px;
       height: 315px;
-      border-radius: 157.5px;
+      border-radius: 164.5px;
     }
   }
 }
