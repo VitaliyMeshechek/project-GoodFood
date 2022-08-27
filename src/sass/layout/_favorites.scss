@@ -34,7 +34,7 @@
       line-height: 1.19;
     }
 
-    @media screen and (min-width: $desctop) {
+    @media screen and (min-width: $desktop) {
       margin-bottom: 40px;
     }
   }
@@ -63,7 +63,7 @@
       }
     }
 
-    @media screen and (min-width: $desctop) {
+    @media screen and (min-width: $desktop) {
       width: calc((100% - 64px) / 3);
     }
   }
@@ -90,7 +90,7 @@
         border: 14px solid $Button-green;
       }
 
-      @media screen and (min-width: $desctop) {
+      @media screen and (min-width: $desktop) {
         border: 16px solid $Button-green;
       }
     }
@@ -100,7 +100,7 @@
       border: 14px solid $Primary-yellow-main;
       border-radius: 167.166px;
     }
-    @media screen and (min-width: $desctop) {
+    @media screen and (min-width: $dekctop) {
       width: 395px;
       height: 397px;
       border: 16px solid $Primary-yellow-main;
@@ -117,7 +117,7 @@
       height: 268px;
       border-radius: 133.648px;
     }
-    @media screen and (min-width: $desctop) {
+    @media screen and (min-width: $desktop) {
       width: 315px;
       height: 315px;
       border-radius: 157.5px;
