@@ -1,0 +1,51 @@
+.sbscr-form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    margin-bottom: 60px;
+}
+
+.sbscr__btn{
+    margin-left: auto;
+}
+
+.sbscr-form__input{
+    display: block;
+    width: 100%;
+    min-height: 42px;
+    padding-left: 12px;
+    margin: 0 auto;
+
+    background: #FFFFFF;
+    border: 0.854167px solid $Primary-yellow-main;
+    border-radius: 30px;
+
+    outline: transparent;
+
+    &:hover, &:focus-within{
+        border-color: $Primary-yellow-main;
+    }
+}
+
+.sbscr__btn{
+    padding: 11px 22px;
+    border-radius: 30px;
+
+    font-weight: 500;
+    font-size: 13px;
+    line-height: calc(20 / 13);
+}
+
+.sbscr-form__text{
+    font-size: 10px;
+    line-height: calc(12 / 10);
+}
+
+.sbscr-form__link{
+    color: $Green-text;
+}
+
+
+
+

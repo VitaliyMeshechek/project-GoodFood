@@ -5,18 +5,22 @@
         <svg class="ftr__logo logo" width="66" height="52">
           <use href="./images/Icons/icons.svg#logo"></use>
         </svg>
-        <nav class="nav">
-          <ul class="nav__list">
-            <li class="nav__item"><a class="nav__link"></a>Home</li>
-            <li class="nav__item"><a class="nav__link"></a>About</li>
-            <li class="nav__item"><a class="nav__link"></a>Service</li>
-            <li class="nav__item"><a class="nav__link"></a>Menu</li>
-            <li class="nav__item"><a class="nav__link"></a>Contact</li>
+        <nav class="nav ftr__nav">
+          <ul class="nav__list ftr__list">
+            <li class="nav__item"><a class="nav__link ftr__link">Home</a></li>
+            <li class="nav__item"><a class="nav__link ftr__link">About</a></li>
+            <li class="nav__item">
+              <a class="nav__link ftr__link"></a>Service
+            </li>
+            <li class="nav__item"><a class="nav__link ftr__link">Menu</a></li>
+            <li class="nav__item">
+              <a class="nav__link ftr__link">Contact</a>
+            </li>
           </ul>
         </nav>
       </div>
+      <strong class="ftr__claim">Subscribe</strong>
       <form class="sbscr-form">
-        <strong class="sbscr-form__title">Subscribe</strong>
         <label class="sbscr-form__wrap">
           <input
             class="sbscr-form__input"
@@ -24,8 +28,8 @@
             name="email"
             placeholder="Enter your email"
           />
-          <button class="sbscr__btn" type="submit">Subscribe</button>
         </label>
+        <button class="sbscr__btn ftr__btn" type="submit">Subscribe</button>
         <p class="sbscr-form__text">
           By subscribing you agree to with our
           <a class="sbscr-form__link" href="#">Privacy Policy</a>
@@ -34,9 +38,15 @@
     </div>
     <div class="secondary-content">
       <ul class="secondary-content__list">
-        <li class="secondary-content__item">Privacy Policy</li>
-        <li class="secondary-content__item">Terms of Service</li>
-        <li class="secondary-content__item">Cookies Settings</li>
+        <li class="secondary-content__item">
+          <a href="#" class="secondary-content__link">Privacy Policy</a>
+        </li>
+        <li class="secondary-content__item">
+          <a href="#" class="secondary-content__link">Terms of Service</a>
+        </li>
+        <li class="secondary-content__item">
+          <a href="#" class="secondary-content__link">Cookies Settings</a>
+        </li>
       </ul>
       <span class="secondary-content__text"
         >2022 FoodSta. All right reserved.</span

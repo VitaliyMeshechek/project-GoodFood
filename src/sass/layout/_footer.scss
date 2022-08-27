@@ -1,12 +1,95 @@
 .ftr{
-    padding: 100px 0;
-    
-    @media screen and (min-width: $desktop ) {
-        padding: 60px;
+    padding: 60px 0;
+
+    @media screen and (max-width: 767px) {
+        background-image: url(/src/images/footer/apple-left-mb@1x.png), 
+            url(/src/images/footer/orange-right-mb@1x.png), 
+            url(/src/images/footer/apple-banana-bottom-mb@1x.png);
+        background-repeat: no-repeat;
+        background-position: top 132px left 0, top 0 right 0, bottom 0 left 40px;
+
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx){
+                background-image: url(/src/images/footer/apple-left-mb@2x.png),
+                    url(/src/images/footer/orange-right-mb@2x.png),
+                    url(/src/images/footer/apple-banana-bottom-mb@2x.png);;
+                background-size: 110px, 104px, 253px;
+            }
+
+    }
+
+    @media screen and (min-width: $tablet ) {
+        padding: 100px 0;
     }
 }
 
 .ftr__mobile-wrap{
-    display: flex;
+    @media screen and (max-width: 767px) {
+        display: flex;
+        gap: calc(100% - (49px + 66px + 101px));
+        }
+        margin-bottom: 40px;
+}
 
+.ftr__nav{
+    padding-top: 4px;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+}
+
+.ftr__list{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.ftr__link{
+    &:hover, &:focus{
+        color: $Button-green;
+    }
+}
+
+.ftr__claim{
+    display: block;
+    margin-bottom: 12px;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(21 / 14);
+}
+
+.ftr__btn{
+    background-color: #ffffff;
+    border: 0.854167px solid $Green-text;
+
+    &:hover, :focus{
+        background-color: $Primary-yellow-main;
+    }
+}
+
+.secondary-content__list{
+    @extend %list;
+
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.secondary-content__item {
+    font-size: 10px;
+    line-height: calc(12 / 10);
+}
+
+.secondary-content__link{
+    color: $Green-text;
+}
+
+.secondary-content__text{
+    display: block;
+    text-align: center;
+    font-size: 10px;
+    line-height: calc(12 / 10);
 }
