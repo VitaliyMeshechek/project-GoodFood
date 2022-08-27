@@ -33,6 +33,10 @@
       font-size: 16px;
       line-height: 1.19;
     }
+
+    @media screen and (min-width: $desctop) {
+      margin-bottom: 40px;
+    }
   }
 
   &__list {
@@ -72,34 +76,34 @@
     width: 280px;
     height: 282px;
 
-    background-color: #fefefe;
+    background-color: $White;
 
-    border: 11px solid #ffe550;
+    border: 11px solid $Primary-yellow-main;
     border-radius: 139.658px;
     transition: border $cubic, color $cubic;
 
     &:hover,
     &:focus {
-      border: 11px solid #bbf330;
+      border: 11px solid $Button-green;
 
       @media screen and (min-width: $tablet) {
-        border: 14px solid #bbf330;
+        border: 14px solid $Button-green;
       }
 
       @media screen and (min-width: $desctop) {
-        border: 16px solid #bbf330;
+        border: 16px solid $Button-green;
       }
     }
     @media screen and (min-width: $tablet) {
       width: 336px;
       height: 338px;
-      border: 14px solid #ffe550;
+      border: 14px solid $Primary-yellow-main;
       border-radius: 167.166px;
     }
     @media screen and (min-width: $desctop) {
       width: 395px;
       height: 397px;
-      border: 16px solid #ffe550;
+      border: 16px solid $Primary-yellow-main;
       border-radius: 197.5px;
     }
   }
