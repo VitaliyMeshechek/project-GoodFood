@@ -1,0 +1,4 @@
+.card-set-menu {
+  flex-basis: calc((100% - ($indent) * (($items) - 1)) / ($items));
+
+}
