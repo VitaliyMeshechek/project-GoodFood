@@ -1,4 +1,27 @@
-@import './common'; 
-@import './example';
+// Utils
+@import '~node_modules/modern-normalize/modern-normalize.css';
+@import './utils/utility-class';
+@import './utils/variables';
+
+// Base
+@import './base/base';
+@import './base/reset';
+
+// Components
+@import './components/button';
+@import './components/container';
+@import './components/mixins';
+@import './components/logo';
+
+// Layout
+@import './layout/header';
+@import './layout/hero';
+@import './layout/offerings';
+@import './layout/favorites';
+@import './layout/customerssay';
+@import './layout/footer';
+
+
+
 
 

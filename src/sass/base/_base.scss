@@ -1,0 +1,23 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Roboto', 'Kalam', sans-serif;
+
+  color: $Black-text;
+}
+
+img {
+  display: block;
+  width: 100%;
+
+  object-fit: cover;
+  object-position: center;
+}

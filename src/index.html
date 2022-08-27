@@ -4,21 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Page title</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kalam&family=Raleway:wght@700&family=Roboto+Mono:wght@600&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./sass/index.scss" />
-    <script type="module" src="./index.js"></script>
+    <script type="module" src="./js/index.js"></script>
   </head>
   <body>
-    <!-- Header -->
     <!-- ❗️❗️❗️ Add partials like so for every page -->
+    <!-- Header -->
+    <include src="./header.html"></include>
 
     <!-- Hero -->
+    <include src="./hero.html"></include>
 
     <!-- Offerings -->
+    <include src="./offerings.html"></include>
 
     <!-- Favorites -->
+    <include src="./favorites.html"></include>
 
     <!-- Customers Say -->
+    <include src="./customerssay.html"></include>
 
     <!-- Footer -->
+    <include src="./footer.html"></include>
   </body>
 </html>
