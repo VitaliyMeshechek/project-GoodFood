@@ -1,0 +1,34 @@
+.offer {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../);
+
+    @media screen and (min-width: $mobile) and (max-width:767px) {
+        width: 280px;
+    }
+
+    @media screen and (min-width: $tablet) {
+        width: 704px
+    }
+
+    @media screen and (min-width: $desktop) {
+        width: 550px;
+
+    }
+
+    &__img {
+        @media screen and (min-width: $mobile) and (max-width:767px) {
+            width: 280px;
+        }
+
+        @media screen and (min-width: $tablet) {
+            width: 704px
+        }
+
+        @media screen and (min-width: $desktop) {
+            width: 550px;
+
+        }
+    }
+}
