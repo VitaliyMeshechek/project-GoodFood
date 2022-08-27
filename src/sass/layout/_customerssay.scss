@@ -1,0 +1,272 @@
+// reset
+.link {
+  text-decoration: none;
+  color: currentColor;
+}
+
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+// section
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 100px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 100px;
+    padding-bottom: 64px;
+  }
+}
+
+// styles start
+
+// это подключённый задний фон
+.customers-sub {
+  background-image: url(../images/customerssay/background-mob.png);
+  background-repeat: no-repeat;
+  background-size: 100% 789px;
+
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/customerssay/background-tabl.png);
+    background-size: 100% 544px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    background-image: url(../images/customerssay/background-desk.png);
+    background-size: 100% 647px;
+  }
+}
+
+// заголовки в двух секциях
+.customers-sub__title {
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.178;
+
+  @media screen and (max-width: 767px) {
+    display: block;
+    height: 66px;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 42px;
+    line-height: 1.166;
+  }
+
+  margin-bottom: 20px;
+
+  color: $Black-text;
+}
+
+// основные подписи к заголовкам
+.customers-sub__desc {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.42;
+
+  @media screen and (max-width: 767px) {
+    display: block;
+    height: 32px;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    line-height: 1.187;
+  }
+
+  margin-bottom: 32px;
+
+  color: $Black-text;
+}
+
+.customers-sub__desc--margin {
+  margin-bottom: 40px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 24px;
+  }
+}
+
+// список состоящих из двух карточек
+.customers__list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 17px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    margin-bottom: 45px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 134px;
+  }
+}
+
+// структура карточки
+.customers__item {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 8px;
+  background-color: $White;
+  border-radius: 0px 30px 30px 30px;
+  height: 247px;
+
+  &:not(:last-child) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 24px;
+    }
+
+    @media screen and (min-width: 768px) {
+      margin-right: 32px;
+    }
+    @media screen and (min-width: 1280px) {
+      margin-right: 139px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 336px;
+    height: 244px;
+    padding: 12px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding: 14px;
+    width: 501px;
+    height: 227px;
+  }
+}
+
+//  аватарка пользователя и звёздочки
+.customers__stars-icons {
+  margin-bottom: 28px;
+}
+
+.customers__avatar {
+  width: 48px;
+  height: 48px;
+}
+
+// комментарий пользователя
+.customers__desc {
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.18;
+
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+    line-height: 1.1666;
+  }
+
+  margin-bottom: 40px;
+  color: $Black-text;
+}
+
+// обёртка аватарки пользователя и имени
+.customers__wrapper--flex {
+  display: flex;
+  align-items: center;
+}
+//  стили для имени пользователя
+.customers__name-wrapper {
+  margin-left: 16px;
+  border-right: 0.854167px solid $Green-text;
+  padding-right: 16px;
+}
+
+.customers__name {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.5;
+
+  margin-bottom: 2px;
+}
+
+.customers__name-desc {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+// -------- subscribe section --------
+
+// банан
+.subscribe__banana {
+  height: 78px;
+  width: 280px;
+
+  background-image: url(../images/customerssay/banana-mob.png);
+
+  @media screen and (max-width: 767px) {
+    margin: 0 auto;
+    margin-bottom: 17px;
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/customerssay/banana-tabl.png);
+    width: 281px;
+    height: 136px;
+    margin-left: auto;
+  }
+
+  @media screen and (max-width: 1279px) {
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    background-image: url(../images/customerssay/banana-deks.png);
+    width: 608px;
+    height: 266px;
+  }
+}
+
+// НИЖЕ КОД ЕЩЁ НЕ ГОТОВ, ЭТО СЕКЦИЯ ПОДПИСКИ
+
+.subscribe--flex {
+  @media screen and (min-width: 1280px) {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+}
+
+.subscribe__form {
+  margin-top: auto;
+}
+
+.subscribe__input {
+  height: 42px;
+  border: 0.854167px solid $Primary-yellow-main;
+  border-radius: 30px;
+
+  padding: 12px 0px 12px 11px;
+
+  &::placeholder {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 2.333;
+    color: #505050;
+  }
+
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
+}
