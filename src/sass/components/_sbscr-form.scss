@@ -1,13 +1,9 @@
 .sbscr-form{
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    // gap: 12px;
 
     margin-bottom: 60px;
-}
-
-.sbscr__btn{
-    margin-left: auto;
 }
 
 .sbscr-form__input{
@@ -15,7 +11,6 @@
     width: 100%;
     min-height: 42px;
     padding-left: 12px;
-    margin: 0 auto;
 
     background: #FFFFFF;
     border: 0.854167px solid $Primary-yellow-main;
@@ -26,10 +21,16 @@
     &:hover, &:focus-within{
         border-color: $Primary-yellow-main;
     }
+
+    @media screen and (max-width: 767px) {
+        margin: 0 auto;
+    }
 }
 
+
 .sbscr__btn{
-    padding: 11px 22px;
+    padding: 10px 21px;
+    margin-left: auto;
     border-radius: 30px;
 
     font-weight: 500;
@@ -40,6 +41,11 @@
 .sbscr-form__text{
     font-size: 10px;
     line-height: calc(12 / 10);
+
+    @media screen and (min-width: $tablet) {
+        font-size: 12px;
+        line-height: calc(14 / 12);
+    }
 }
 
 .sbscr-form__link{
