@@ -1,56 +1,58 @@
 .offer {
-  padding-bottom: 60px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100% 1050px;
-  background-image: url(/src/images/offerings/background/mob-320.png);
+  padding-bottom: 100px;
+  // display: flex;
+  // padding-bottom: 60px;
+  // background-repeat: no-repeat;
+  // background-position: center;
+  // background-size: 100% 1050px;
+  // background-image: url(/src/images/offerings/background/mob-320.png);
 
-  @media screen and (min-width: $mobile) {
-    background-image: url(/src/images/offerings/background/mob-480.png);
-  }
+  // @media screen and (min-width: $mobile) {
+  //   background-image: url(/src/images/offerings/background/mob-480.png);
+  // }
 
-  @media screen and (min-width: $tablet) {
-    padding-bottom: 100px;
-    background-size: 100% 1140px;
-    background-image: url(/src/images/offerings/background/tablet.png);
-  }
+  // @media screen and (min-width: $tablet) {
+  //   padding-bottom: 100px;
+  //   background-size: 100% 1140px;
+  //   background-image: url(/src/images/offerings/background/tablet.png);
+  // }
 
-  @media screen and (min-width: $desktop) {
-    width: 100%;
-    background-image: url(/src/images/offerings/background/desktop.png);
-  }
+  // @media screen and (min-width: $desktop) {
+  //   width: 100%;
+  //   background-image: url(/src/images/offerings/background/desktop.png);
+  // }
 
-  &__img {
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 60px;
-    width: 280px;
-    height: 309px;
+  // &__img {
+  //   margin-left: auto;
+  //   margin-right: auto;
+  //   margin-bottom: 60px;
+  //   width: 280px;
+  //   height: 309px;
 
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-image: url(/src/images/offerings/apple/Apple-mob-280.png);
+  //   background-repeat: no-repeat;
+  //   background-position: center;
+  //   background-size: cover;
+  //   background-image: url(/src/images/offerings/apple/Apple-mob-280.png);
 
-    @media screen and (min-width: $tablet) {
-      width: 704px;
-      height: 394px;
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-      background-image: url(/src/images/offerings/apple/apples-tablet-704.png);
-    }
+  //   @media screen and (min-width: $tablet) {
+  //     width: 704px;
+  //     height: 394px;
+  //     background-repeat: no-repeat;
+  //     background-position: center;
+  //     background-size: cover;
+  //     background-image: url(/src/images/offerings/apple/apples-tablet-704.png);
+  //   }
 
-    @media screen and (min-width: $desktop) {
-      margin: 0;
-      width: 550px;
-      height: 604px;
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-      background-image: url(/src/images/offerings/apple/apples-dasktop-550.png);
-    }
-  }
+  //   @media screen and (min-width: $desktop) {
+  //     margin: 0;
+  //     width: 550px;
+  //     height: 604px;
+  //     background-repeat: no-repeat;
+  //     background-position: center;
+  //     background-size: cover;
+  //     background-image: url(/src/images/offerings/apple/apples-dasktop-550.png);
+  //   }
+  // }
   &__title {
     font-weight: 700;
     font-size: 28px;
@@ -67,12 +69,14 @@
     @media screen and (min-width: $desktop) {
       font-size: 48px;
       line-height: 1.2;
+      margin-left: 656px;
     }
   }
   &__descr {
     margin-bottom: 28px;
     @media screen and (min-width: $tablet) {
       margin-bottom: 40px;
+      margin-left: 656px;
       width: 500px;
     }
   }
@@ -82,6 +86,7 @@
     font-size: 14px;
     line-height: 1.14;
     margin-bottom: 28px;
+    margin-top: 100px;
     min-width: 272px;
 
     &__subtitle {
