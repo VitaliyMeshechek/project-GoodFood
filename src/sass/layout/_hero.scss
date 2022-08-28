@@ -8,6 +8,10 @@
     min-width: 320px;
     padding-top: 60px;
 
+    @media screen and (min-width: $desktop) {
+      padding-top: 14px;
+    }
+
 
     &__title {
         font-weight: 700;
@@ -66,21 +70,22 @@
 
     &__slider {
         position: relative;
-        
+
         @media screen and (max-width:767px) {
             display: none;
-        }
-
-        @media screen and (min-width: $desktop) {
-            margin-left: auto;
-            transform: translateX(-15px);
         }
 
         @media screen and (max-width:1279px) {
             position: absolute;
             top: 149px;
-            right: 40px;
+            // right: 32px;
+            transform: translateX(400px);
         }
+
+        @media screen and (min-width: $desktop) {
+          margin-left: auto;
+          transform: translateX(-16px);
+      }
 
     }
 }
@@ -93,13 +98,13 @@
         width:16px;
         height:29px;
     }}
-    
+
     &__img {
     border: 14px solid $Primary-yellow-main;
     border-radius: 50%;
 
     @media screen and (min-width: $tablet) {
-        width: 292px
+        width: 292px;
     }
 
     @media screen and (min-width: $desktop) {
@@ -112,7 +117,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
     border: transparent;
     border-radius: 4px;
     background-color: $White;
@@ -120,7 +125,7 @@
     position: absolute;
 
     transition: box-shadow $cubic;
-    
+
         &:hover,
         &:focus {
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
@@ -130,13 +135,14 @@
     height: 40px;
     border-radius: 8px;
     transition:fill $cubic;
-    
-        &:hover{
+
+        &:hover,
+        &:focus {
             fill:$Green-text;
         }
-    
+
     }
-    
+
     &--prev{
         top:50%;
         left: 0;

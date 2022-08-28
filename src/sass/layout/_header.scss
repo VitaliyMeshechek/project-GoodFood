@@ -19,15 +19,15 @@
     z-index: 3;
 
     @media screen and (min-width: 480px)  {
-        width: 480px;    
+        width: 480px;
     }
 
     @media screen and (min-width: 768px)  {
-        width: 768px;    
+        width: 768px;
     }
 
     @media screen and (min-width: 1280px)  {
-        width: 1280px;  
+        width: 1280px;
     }
 }
 
@@ -75,7 +75,7 @@
     padding: 16px 10px 16px 16px;
     font-size: 14px;
     line-height: calc(16/14);
-    
+
         @media screen and (min-width: 768px) {
             height: auto;
             width: auto;
@@ -88,7 +88,7 @@
             color: $Button-green;
             text-decoration: underline;
     }
-    
+
 }
 
 .nav__link--modal{
@@ -96,7 +96,7 @@
     line-height: calc(19/16);
     background-color: inherit;
     transition: background-color $cubic;
-    
+
     &:hover,
     &:focus{
             background-color: $Button-green;
@@ -107,7 +107,7 @@
 }
 
 .btn-order--header{
-       
+
             margin-left: 28px;
             width: 100px;
             height: 32px;
@@ -180,8 +180,8 @@
             right:  50%;
             transform: translate(220px, 0px)
         }
-   
-    
+
+
     /* Должен быть выше чем у подложки*/
 
     /*  Побочные стили   */
