@@ -7,9 +7,9 @@
 }
 
 .subscribe__input{
-    display: block;
+    // display: block;
     width: 100%;
-    min-height: 42px;
+    height: 42px;
     padding-left: 12px;
 
     background: #FFFFFF;
@@ -22,9 +22,18 @@
         border-color: $Primary-yellow-main;
     }
 
-    @media screen and (max-width: 767px) {
-        margin: 0 auto;
-    }
+    // @media screen and (max-width: 767px) {
+    //     margin: 0 auto;
+    // }
+
+        &::placeholder {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 2.333;
+            color: #505050;
+        }
 }
 
 
