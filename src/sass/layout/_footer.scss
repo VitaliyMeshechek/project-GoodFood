@@ -112,6 +112,7 @@
     }
 }
 
+
 .ftr__sbscr-form{
     @media screen and (min-width: $tablet) {
         gap: 12px;
@@ -126,6 +127,7 @@
 
 .ftr__sbscr-cover{
     display: flex;
+    // position: relative;
     
     @media screen and (max-width: 767px) {
         flex-direction: column;
@@ -137,6 +139,10 @@
         gap: 13px;
     }
 
+}
+
+.ftr__sbscr-label {
+    position: relative;
 }
 
 .ftr__sbscr-input{

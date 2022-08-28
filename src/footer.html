@@ -24,12 +24,23 @@
         <div class="ftr__sbscr-cover">
           <label class="sbscr-form__wrap ftr__sbscr-label">
             <input
-              class="sbscr-form__input ftr__sbscr-input"
+              class="subscribe__input ftr__sbscr-input"
               type="email"
               name="email"
               placeholder="Enter your email"
             />
+            <p class="subscribe__warning ftr__warning">
+              <svg
+                class="subscribe__warning-icon ftr__warning-icon"
+                width="12"
+                height="12"
+              >
+                <use href="./images/Icons/icons.svg#eror"></use>
+              </svg>
+              Not a valid email address (example@email.com)
+            </p>
           </label>
+
           <button class="sbscr__btn ftr__btn" type="submit">Subscribe</button>
         </div>
         <p class="sbscr-form__text">
