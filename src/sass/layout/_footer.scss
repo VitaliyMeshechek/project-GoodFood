@@ -1,5 +1,6 @@
 .ftr {
     padding: 60px 0;
+    background-color: #ffffff;
 
     @media screen and (max-width: 767px) {
         background-image: url('../images/footer/apple-left-mb@1x.png'),
@@ -59,6 +60,10 @@
         display: flex;
         margin-bottom: 80px;
     }
+}
+
+.ftr__logo{
+    margin-right: 0;
 }
 
 .ftr__tablet-wrap {

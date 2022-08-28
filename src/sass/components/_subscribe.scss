@@ -1,14 +1,7 @@
-.sbscr-form{
-  display: flex;
-  flex-direction: column;
-  // gap: 12px;
 
-  margin-bottom: 60px;
-}
 
 .subscribe__input{
   // display: block;
-  width: 100%;
   height: 42px;
   padding-left: 12px;
   position: relative;
@@ -18,6 +11,10 @@
   border-radius: 30px;
 
   outline: transparent;
+
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
 
   &:hover, &:focus-within{
       border-color: $Primary-yellow-main;
@@ -47,19 +44,6 @@
   cursor: pointer;
 }
 
-.sbscr-form__text{
-  font-size: 10px;
-  line-height: calc(12 / 10);
-
-  @media screen and (min-width: $tablet) {
-      font-size: 12px;
-      line-height: calc(14 / 12);
-  }
-}
-
-.sbscr-form__link{
-  color: $Green-text;
-}
 
 // notifications subscribe
 .ftr__warning{
