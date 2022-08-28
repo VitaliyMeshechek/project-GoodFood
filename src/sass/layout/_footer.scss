@@ -155,6 +155,7 @@
 .ftr__btn{
     background-color: #ffffff;
     border: 0.854167px solid $Green-text;
+    transition: background-color $cubic;
 
     &:hover, :focus{
         background-color: $Primary-yellow-main;
