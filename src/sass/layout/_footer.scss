@@ -1,0 +1,261 @@
+.ftr {
+    padding: 60px 0;
+    background-color: #ffffff;
+
+    @media screen and (max-width: 767px) {
+        background-image: url('../images/footer/apple-left-mb@1x.png'),
+            url('../images/footer/orange-right-mb@1x.png'),
+            url('../images/footer/apple-banana-bottom-mb@1x.png');
+        background-repeat: no-repeat;
+        background-position: top 132px left 0, top 0 right 0, bottom 0 center;
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url('../images/footer/apple-left-mb@2x.png'),
+                url('../images/footer/orange-right-mb@2x.png'),
+                url('../images/footer/apple-banana-bottom-mb@2x.png');
+            ;
+            background-size: 110px, 104px, 253px;
+        }
+
+    }
+
+    @media screen and (min-width: $tablet ) {
+        padding: 100px 0;
+
+        background-image: url('../images/footer/fruits-bottom-tb@1x.png'),
+            url('../images/footer/orange-right-tb@1x.png');
+        background-repeat: no-repeat;
+        background-position: bottom 0px center, top 0 right 0;
+        background-size: 768px, 203px;
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url('../images/footer/fruits-bottom-tb@2x.png'),
+                url('../images/footer/orange-right-tb@2x.png');
+            ;
+            background-size: 768px, 203px;
+        }
+    }
+
+    @media screen and (min-width: $desktop ) {
+        background-image: url('../images/footer/fruits-bottom-dt@1x.png');
+        background-repeat: no-repeat;
+        background-position: bottom 0px center;
+        background-size: 1211px;
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url('../images/footer/fruits-bottom-dt@2x.png');
+            background-size: 1211px;
+        }
+    }
+}
+
+.ftr__content-wrap {
+    @media screen and (min-width: $desktop) {
+        display: flex;
+        margin-bottom: 80px;
+    }
+}
+
+.ftr__logo{
+    margin-right: 0;
+}
+
+.ftr__tablet-wrap {
+    @media screen and (max-width: 767px) {
+        display: flex;
+        gap: calc(100% - (49px + 66px + 101px));
+    }
+
+    margin-bottom: 40px;
+
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        gap: 117px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        gap: 145px;
+    }
+}
+
+
+.ftr__nav {
+    padding-top: 4px;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+
+    @media screen and (min-width: $tablet) {
+        padding-top: 18px;
+    }
+}
+
+.ftr__list {
+    gap: 20px;
+}
+
+.ftr__link {
+    @media screen and (max-width: 767px) {
+        padding: 0;
+        width: 0;
+        height: 16;
+    }
+    
+    &:hover,
+    &:focus {
+        @media screen and (min-width: 768px) {
+            background-color: white;
+            color: $Button-green;
+            text-decoration: underline;
+        }
+    }
+}
+
+.ftr__claim {
+    display: block;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(21 / 14);
+
+    @media screen and (max-width: 767px) {
+        margin-bottom: 12px;
+    }
+}
+
+
+.ftr__sbscr-form {
+    @media screen and (min-width: $tablet) {
+        gap: 12px;
+        margin-bottom: 100px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        margin-left: auto;
+        margin-bottom: 0;
+    }
+}
+
+.ftr__sbscr-cover {
+    display: flex;
+    // position: relative;
+
+    @media screen and (max-width: 767px) {
+        flex-direction: column;
+        gap: 20px;
+        margin-bottom: 20px;
+    }
+
+    @media screen and (min-width: $tablet) {
+        gap: 13px;
+    }
+
+}
+
+.ftr__sbscr-label {
+    position: relative;
+}
+
+.ftr__sbscr-input {
+    @media screen and (min-width: 767px) {
+        width: 279px;
+        height: 42px;
+    }
+}
+
+.ftr__btn {
+    background-color: #ffffff;
+    border: 0.854167px solid $Green-text;
+    transition: background-color $cubic;
+
+    &:hover,
+    :focus {
+        background-color: $Primary-yellow-main;
+    }
+
+    @media screen and (min-width: $tablet) {
+        margin: 0;
+    }
+}
+
+.sbscr-form {
+    display: flex;
+    flex-direction: column;
+    // gap: 12px;
+    margin-bottom: 60px;
+}
+
+.sbscr-form__text {
+    font-size: 10px;
+    line-height: calc(12 / 10);
+
+    @media screen and (min-width: $tablet) {
+        font-size: 12px;
+        line-height: calc(14 / 12);
+    }
+}
+
+.sbscr-form__link {
+    color: $Green-text;
+}
+
+.secondary-content {
+
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        margin-bottom: 0;
+    }
+}
+
+.secondary-content__list {
+    @extend %list;
+
+    display: flex;
+
+    @media screen and (max-width: 767px) {
+        justify-content: space-between;
+        margin-bottom: 40px;
+    }
+
+    @media screen and (min-width: $tablet) {
+        gap: 12px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        gap: 20px;
+    }
+}
+
+.secondary-content__item {
+    font-size: 10px;
+    line-height: calc(12 / 10);
+
+    @media screen and (min-width: $tablet) {
+        font-size: 12px;
+        line-height: calc(14 / 12);
+    }
+}
+
+.secondary-content__link {
+    color: $Green-text;
+}
+
+.secondary-content__text {
+    display: block;
+    text-align: center;
+    font-size: 10px;
+    line-height: calc(12 / 10);
+
+    @media screen and (min-width: $tablet) {
+        margin-left: auto;
+        font-size: 12px;
+        line-height: calc(14 / 12);
+    }
+}
