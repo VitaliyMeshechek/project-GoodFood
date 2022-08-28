@@ -1,0 +1,62 @@
+<!-- Header-->
+<header class="header">
+  <div class="container header__conteiner">
+    <!-- Logo -->
+    <svg class="header__logo">
+      <use xlink:href="./images/Icons/icons.svg#logo"></use>
+    </svg>
+    <!-- Navigation -->
+    <nav class="nav">
+      <ul class="nav__list hide__nav-mobile">
+        <li class="nav__item">
+          <a href="" class="nav__link">Home</a>
+        </li>
+        <li class="nav__item">
+          <a href="" class="nav__link">About</a>
+        </li>
+        <li class="nav__item">
+          <a href="" class="nav__link">Service</a>
+        </li>
+        <li class="nav__item">
+          <a href="" class="nav__link">Menu</a>
+        </li>
+        <li class="nav__item">
+          <a href="" class="nav__link">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- Order now -->
+    <div class="place-for-btn hide__nav-mobile">BTN</div>
+    <!-- Burger -->
+    <a href="#" class="js-open-modal burger" data-modal="1">
+      <svg class="burger__icon">
+        <use xlink:href="./images/Icons/icons.svg#burger_menu"></use>
+      </svg>
+    </a>
+  </div>
+</header>
+
+<div class="modal modal__mobaile-nav" data-modal="1">
+  <!--   Svg иконка для закрытия окна  -->
+  <nav class="nav">
+    <ul class="nav__list">
+      <li class="nav__item">
+        <a href="" class="nav__link nav__link--modal js-modal-close">Home</a>
+      </li>
+      <li class="nav__item">
+        <a href="" class="nav__link nav__link--modal js-modal-close">About</a>
+      </li>
+      <li class="nav__item">
+        <a href="" class="nav__link nav__link--modal js-modal-close">Service</a>
+      </li>
+      <li class="nav__item">
+        <a href="" class="nav__link nav__link--modal js-modal-close">Menu</a>
+      </li>
+      <li class="nav__item">
+        <a href="" class="nav__link nav__link--modal js-modal-close">Contact</a>
+      </li>
+    </ul>
+  </nav>
+</div>
+
+<div class="overlay js-overlay-modal"></div>
