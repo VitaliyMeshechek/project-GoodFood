@@ -86,7 +86,13 @@
 }
 
 .slider{
-    
+    &__svg{
+    width: 11px;
+    height: 20px;
+    @media screen and (min-width: $desktop){
+        width:16px;
+        height:29px;
+    }}
     
     &__img {
     border: 14px solid $Primary-yellow-main;
@@ -103,6 +109,9 @@
 &-btn{
     width: 34px;
     height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     
     border: transparent;
     border-radius: 4px;
