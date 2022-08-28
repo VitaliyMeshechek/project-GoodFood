@@ -1,0 +1,17 @@
+.btn-order {
+    background-color: $Button-green;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 1.5;
+    width: 98px;
+    height: 32px;
+    background: $Button-green;
+    border-radius: 30px;
+    border: transparent;
+    cursor: pointer;
+
+    transition: background-color $cubic;
+    &:hover, &:focus{
+    background-color:$Button-light-green;
+    }
+}
