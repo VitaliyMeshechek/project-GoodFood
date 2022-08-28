@@ -1,21 +1,19 @@
 // Colors
-$Primary-yellow-main: #FFE550;
-$Button-green: #BBF330;
-$Button-light-green: #B5FF00;
-$Green-text: #7EB101;
-$Black-text: #2C2C2C;
-$White: #FEFEFE;
-$Radial-gradient: #2F583F;
+
+$Primary-yellow-main: #ffe550;
+$Button-green: #bbf330;
+$Button-light-green: #b5ff00;
+$Green-text: #7eb101;
+$Black-text: #2c2c2c;
+$White: #fefefe;
+$Radial-gradient: #2f583f;
+
 $Dark-grey-text: #696969;
 $Placeholder-text: #505050;
 $Additional-text-black: #000000;
-$Background-cl: #F5F5F5;
-$Pink-cl-eror: #FF705D;
-$Additional-border-cl: #597D00;
-
-// // Fonts
-// $Mainfont: 'Roboto', sans-serif;
-// $Secondaryfont: 'Kalam', sans-serif;
+$Background-cl: #f5f5f5;
+$Pink-cl-eror: #ff705d;
+$Additional-border-cl: #597d00;
 
 // Facturre points
 $mobile: 480px;
@@ -25,3 +23,6 @@ $desktop: 1280px;
 // Cubic
 $cubic: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
+// Order
+$items: 3;
+$indent: 20px;
