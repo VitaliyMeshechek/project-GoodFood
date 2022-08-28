@@ -2,18 +2,18 @@
     padding: 60px 0;
 
     @media screen and (max-width: 767px) {
-        background-image: url(/src/images/footer/apple-left-mb@1x.png), 
-            url(/src/images/footer/orange-right-mb@1x.png), 
-            url(/src/images/footer/apple-banana-bottom-mb@1x.png);
+        background-image: url('../images/footer/apple-left-mb@1x.png'), 
+            url('../images/footer/orange-right-mb@1x.png'), 
+            url('../images/footer/apple-banana-bottom-mb@1x.png');
         background-repeat: no-repeat;
         background-position: top 132px left 0, top 0 right 0, bottom 0 center;
 
         @media (min-device-pixel-ratio: 2),
             (min-resolution: 192dpi),
             (min-resolution: 2dppx){
-                background-image: url(/src/images/footer/apple-left-mb@2x.png),
-                    url(/src/images/footer/orange-right-mb@2x.png),
-                    url(/src/images/footer/apple-banana-bottom-mb@2x.png);;
+                background-image: url('../images/footer/apple-left-mb@2x.png'),
+                    url('../images/footer/orange-right-mb@2x.png'),
+                    url('../images/footer/apple-banana-bottom-mb@2x.png');;
                 background-size: 110px, 104px, 253px;
             }
 
@@ -22,7 +22,8 @@
     @media screen and (min-width: $tablet ) {
         padding: 100px 0;
 
-        background-image: url(/src/images/footer/fruits-bottom-tb@1x.png), url(/src/images/footer/orange-right-tb@1x.png);
+        background-image: url('../images/footer/fruits-bottom-tb@1x.png'), 
+            url('../images/footer/orange-right-tb@1x.png');
         background-repeat: no-repeat;
         background-position: bottom 0px center, top 0 right 0;
         background-size: 768px, 203px;
@@ -30,15 +31,15 @@
         @media (min-device-pixel-ratio: 2),
             (min-resolution: 192dpi),
             (min-resolution: 2dppx) {
-            background-image: url(/src/images/footer/fruits-bottom-tb@2x.png),
-                url(/src/images/footer/orange-right-tb@2x.png);
+            background-image: url('../images/footer/fruits-bottom-tb@2x.png'),
+                url('../images/footer/orange-right-tb@2x.png');
             ;
             background-size: 768px, 203px;
         }
     }
 
     @media screen and (min-width: $desktop ) {
-        background-image: url(/src/images/footer/fruits-bottom-dt@1x.png);
+        background-image: url('../images/footer/fruits-bottom-dt@1x.png');
         background-repeat: no-repeat;
         background-position: bottom 0px center;
         background-size: 1211px;
@@ -46,7 +47,7 @@
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-        background-image: url(/src/images/footer/fruits-bottom-dt@2x.png);
+        background-image: url('../images/footer/fruits-bottom-dt@2x.png');
         background-size: 1211px;
         }
     }
@@ -94,7 +95,7 @@
 }
 
 .ftr__link{
-    
+
     &:hover, &:focus{
     @media screen and (min-width: 768px) {
             background-color: white;
