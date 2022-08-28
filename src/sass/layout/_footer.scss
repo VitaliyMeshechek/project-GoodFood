@@ -171,6 +171,27 @@
     }
 }
 
+.sbscr-form {
+    display: flex;
+    flex-direction: column;
+    // gap: 12px;
+    margin-bottom: 60px;
+}
+
+.sbscr-form__text {
+    font-size: 10px;
+    line-height: calc(12 / 10);
+
+    @media screen and (min-width: $tablet) {
+        font-size: 12px;
+        line-height: calc(14 / 12);
+    }
+}
+
+.sbscr-form__link {
+    color: $Green-text;
+}
+
 .secondary-content{
 
     @media screen and (min-width: $tablet) {

@@ -1,0 +1,89 @@
+
+.subscribe__input{
+    // display: block;
+    width: 100%;
+    height: 42px;
+    padding-left: 12px;
+    position: relative;
+
+    background: #FFFFFF;
+    border: 0.854167px solid $Primary-yellow-main;
+    border-radius: 30px;
+
+    outline: transparent;
+
+    &:hover, &:focus-within{
+        border-color: $Primary-yellow-main;
+    }
+
+    // @media screen and (max-width: 767px) {
+    //     margin: 0 auto;
+    // }
+
+        &::placeholder {
+            position: absolute;
+            top: 12px;
+            font-size: 12px;
+            line-height: calc(18 / 12);
+            color: #505050;
+        }
+}
+
+.subscribe__btn{
+    padding: 10px 21px;
+    margin-left: auto;
+    border-radius: 30px;
+
+    font-weight: 500;
+    font-size: 13px;
+    line-height: calc(20 / 13);
+    cursor: pointer;
+}
+
+// notifications subscribe
+.ftr__warning{
+    position: absolute;
+    bottom: -14; 
+    left: 0; 
+
+    @media screen and (max-width: 767px) {
+        bottom: -18px;
+    }
+}
+
+.subscribe__warning {
+    display: none;
+    align-items: center;
+    position: absolute;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 1.5;
+
+    margin-top: 4px;
+
+    color: $Pink-cl-eror;
+}
+
+.subscribe__warning-icon {
+    margin-right: 4px;
+}
+
+// // механизм появления ошибки
+
+.subscribe__input:invalid+.subscribe__warning {
+    display: flex;
+}
+
+.subscribe__input:invalid {
+    border-color: $Pink-cl-eror;
+}
+
+.subscribe__input:not(:placeholder-shown):valid {
+    border-color: $Green-text;
+}
+
+
+
