@@ -18,7 +18,7 @@
     padding-bottom: 100px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     padding-top: 100px;
     padding-bottom: 64px;
   }
@@ -50,11 +50,6 @@
   font-size: 28px;
   line-height: 1.178;
 
-  @media screen and (max-width: 767px) {
-    display: block;
-    height: 66px;
-  }
-
   @media screen and (min-width: 768px) {
     font-size: 42px;
     line-height: 1.166;
@@ -65,17 +60,25 @@
   color: $Black-text;
 }
 
+// это блок со спец. классами которые добавляют фикс. высоту
+.customers-sub__title--height {
+  @media screen and (max-width: 767px) {
+    display: block;
+    height: 66px;
+  }
+}
+.customers__desc--height {
+  @media screen and (max-width: 767px) {
+    display: block;
+    height: 32px;
+  }
+}
 // основные подписи к заголовкам
 .customers-sub__desc {
   font-family: 'Roboto';
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.42;
-
-  @media screen and (max-width: 767px) {
-    display: block;
-    height: 32px;
-  }
+  line-height: 1.142;
 
   @media screen and (min-width: 768px) {
     font-size: 16px;
