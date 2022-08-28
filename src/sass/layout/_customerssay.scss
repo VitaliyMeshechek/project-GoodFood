@@ -1,0 +1,367 @@
+// reset
+.link {
+  text-decoration: none;
+  color: currentColor;
+}
+
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+// section
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 100px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-top: 100px;
+    padding-bottom: 64px;
+  }
+}
+
+// styles start
+
+// это подключённый задний фон
+.customers-sub {
+  background-repeat: no-repeat;
+  background-size: 100% 789px;
+  background-image: url(../images/customerssay/background-mob.png);
+
+  @media screen and (min-width: 480px) {
+    background-image: url(../images/customerssay/background-mob.png);
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/customerssay/background-tabl.png);
+    background-size: 100% 544px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    background-image: url(../images/customerssay/background-desk.png);
+    background-size: 100% 647px;
+  }
+}
+
+// заголовки в двух секциях
+.customers-sub__title {
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.178;
+
+  @media screen and (min-width: 768px) {
+    font-size: 42px;
+    line-height: 1.166;
+  }
+
+  margin-bottom: 20px;
+
+  color: $Black-text;
+}
+
+// это блок со спец. классами которые добавляют фикс. высоту
+.customers-sub__title--height {
+  @media screen and (max-width: 767px) {
+    display: block;
+    height: 66px;
+  }
+}
+.customers__desc--height {
+  @media screen and (max-width: 767px) {
+    display: block;
+    height: 32px;
+  }
+}
+// основные подписи к заголовкам
+.customers-sub__desc {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.142;
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    line-height: 1.187;
+  }
+
+  margin-bottom: 32px;
+
+  color: $Black-text;
+}
+
+.customers-sub__desc--margin {
+  margin-bottom: 40px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 24px;
+  }
+}
+
+// список состоящих из двух карточек
+.customers__list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 17px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    margin-bottom: 45px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 134px;
+  }
+}
+
+// структура карточки
+.customers__item {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 8px;
+  background-color: $White;
+  border-radius: 0px 30px 30px 30px;
+  height: 247px;
+
+  &:not(:last-child) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 24px;
+    }
+
+    @media screen and (min-width: 768px) {
+      margin-right: 32px;
+    }
+    @media screen and (min-width: 1280px) {
+      margin-right: 139px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 336px;
+    height: 244px;
+    padding: 12px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding: 14px;
+    width: 501px;
+    height: 227px;
+  }
+}
+
+//  аватарка пользователя и звёздочки
+.customers__stars-icons {
+  margin-bottom: 28px;
+}
+
+.customers__avatar {
+  width: 48px;
+  height: 48px;
+}
+
+// комментарий пользователя
+.customers__desc {
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.18;
+
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+    line-height: 1.1666;
+  }
+
+  margin-bottom: 40px;
+  color: $Black-text;
+}
+
+// обёртка аватарки пользователя и имени
+.customers__wrapper--flex {
+  display: flex;
+  align-items: center;
+}
+//  стили для имени пользователя
+.customers__name-wrapper {
+  margin-left: 16px;
+  border-right: 0.854167px solid $Green-text;
+  padding-right: 16px;
+}
+
+.customers__name {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.5;
+
+  margin-bottom: 2px;
+}
+
+.customers__name-desc {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+// -------- subscribe section --------
+
+// банан
+.subscribe__banana {
+  height: 78px;
+  width: 280px;
+  background-image: url(../images/customerssay/banana-mob-@1x.png);
+  background-size: cover;
+
+  @media screen and (max-width: 767px) {
+  }
+
+  @media screen and (max-width: 767px) {
+    margin: 0 auto;
+    margin-bottom: 17px;
+    background-image: url(../images/customerssay/banana-mob-@1x.png);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/customerssay/banana-mob-@2x.png);
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/customerssay/banana-tabl-@1x.png);
+    width: 281px;
+    height: 136px;
+    margin-left: auto;
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/customerssay/banana-tabl-@2x.png);
+    }
+  }
+
+  @media screen and (max-width: 1279px) {
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    background-image: url(../images/customerssay/banana-deks-@1x.png);
+    width: 608px;
+    height: 266px;
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/customerssay/banana-deks-@2x.png);
+    }
+  }
+}
+
+.subscribe--flex {
+  @media screen and (min-width: 1280px) {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+}
+
+.subscribe__form {
+  margin-top: auto;
+}
+
+.subscribe__input {
+  height: 42px;
+  border: 0.854167px solid $Primary-yellow-main;
+  border-radius: 30px;
+
+  padding: 12px 0px 12px 11px;
+
+  &::placeholder {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 2.333;
+    color: #505050;
+  }
+
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
+
+  @media screen and (min-width: 768px) {
+    min-width: 395px;
+  }
+}
+
+.subscribe__btn {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1.5;
+
+  padding: 11px 22px;
+
+  background-color: $Button-green;
+
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $Button-light-green;
+  }
+
+  @media screen and (max-width: 767px) {
+    display: block;
+    margin-left: auto;
+    margin-top: 20px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-left: 22px;
+  }
+}
+
+// notifications subscribe
+
+.subscribe__warning {
+  display: none;
+  align-items: center;
+  position: absolute;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1.5;
+
+  margin-top: 4px;
+
+  color: $Pink-cl-eror;
+}
+
+.subscribe__warning-icon {
+  margin-right: 4px;
+}
+
+// механизм появления ошибки
+
+.subscribe__input:invalid + .subscribe__warning {
+  display: flex;
+}
+
+.subscribe__input:invalid {
+  border-color: $Pink-cl-eror;
+}
+
+.subscribe__input:not(:placeholder-shown):valid {
+  border-color: $Green-text;
+}
