@@ -94,9 +94,13 @@
 }
 
 .ftr__link{
+    
     &:hover, &:focus{
-        color: $Button-green;
-        text-decoration: underline;
+    @media screen and (min-width: 768px) {
+            background-color: white;
+            color: $Button-green;
+            text-decoration: underline;
+        }
     }
 }
 
