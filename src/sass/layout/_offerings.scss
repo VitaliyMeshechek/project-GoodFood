@@ -1,19 +1,25 @@
 .offer {
   display: flex;
   background-repeat: no-repeat;
+  background-position: center;
   background-size: 100% 1050px;
-  background-image: url(/src/images/offerings/background/mob-320.png);
+  background-image: url(..//images/offerings/background/mob-320.png);
 
-  @media screen and (min-width: $mobile) {
-    background-image: url(/src/images/offerings/background/mob-480.png);
+  @media screen and (min-width: 480px) {
+    background-image: url(..//images/offerings/background/mob-480.png);
   }
 
-  @media screen and (min-width: $tablet) {
-    background-size: 100% 1140px;
-    background-image: url(/src/images/offerings/background/tablet.png);
+  @media screen and (min-width: 768px) {
+    flex-direction: column;
+    margin-top: -304px;
+    background-size: auto;
+    background-position: center;
+    background-image: url(..//images/offerings/background/tablet.png);
   }
 
-  @media screen and (min-width: $desktop) {
+  @media screen and (min-width: 1280px) {
+    flex-direction: row;
+    margin-top: -447px;
     margin-bottom: 100px;
     background-position: center;
     background-image: url(..//images/offerings/background/desktop.png);
@@ -31,22 +37,40 @@
     // background-size: cover;
     // background-image: url(/src/images/offerings/apple/Apple-mob-280.png);
 
-    @media screen and (min-width: $tablet) {
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
       width: 704px;
       height: 394px;
+      display: none;
       // background-repeat: no-repeat;
       // background-position: center;
       // background-size: cover;
       // background-image: url(/src/images/offerings/apple/apples-tablet-704.png);
     }
 
-    @media screen and (min-width: $desktop) {
+    @media screen and (min-width: 1280px) {
       width: 550px;
       height: 604px;
       // background-repeat: no-repeat;
       // // background-position: center;
       // background-size: cover;
-      // background-image: url(..//images/offerings/apple/apples-dasktop-550.png);
+      // background-image: url(src/images/offerings/apple/apples-dasktop-550.png);
+    }
+  }
+
+  &__img-apple {
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
+      // width: 704px;
+      // height: 394px;
+      margin-top: 150px;
+      margin-bottom:  60px;
+
+      // background-repeat: no-repeat;
+      // background-position: center;
+      // background-size: cover;
+      // background-image: url(/src/images/offerings/apple/apples-tablet-704.png);
+    }
+    @media screen and (min-width: 1280px) {
+      display: none;
     }
   }
   &__title {
@@ -55,13 +79,14 @@
     line-height: 1.18;
     margin-bottom: 28px;
 
-    @media screen and (min-width: $tablet) {
+    @media screen and (min-width: 768px) {
+      width: 526px;
       font-size: 42px;
       line-height: 1.16;
       margin-bottom: 20px;
     }
 
-    @media screen and (min-width: $desktop) {
+    @media screen and (min-width: 1280px) {
       font-size: 48px;
       line-height: 1.2;
       margin-left: 90px;
@@ -70,78 +95,81 @@
   }
   &__descr {
     margin-bottom: 28px;
-    @media screen and (min-width: $tablet) {
-      // margin-bottom: 40px;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 40px;
+      width: 500px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 28px;
       margin-left: 90px;
       width: 500px;
     }
   }
 
-  &__text {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.14;
-    // margin-bottom: 28px;
-    min-width: 272px;
-
     &__subtitle {
       font-weight: 700;
       font-size: 18px;
-      line-height: 1.16;
+      line-height: 1.17;
       margin-bottom: 16px;
-    }
-    @media screen and (min-width: $tablet) {
-      font-size: 16px;
-      line-height: 1.18;
-      margin-bottom: 40px;
-    }
 
-    @media screen and (min-width: $desktop) {
-      line-height: 1.5;
+    @media screen and (min-width: 1280px) {
+      line-height: 1.39;
     }
+  }
     &__subdescr {
       font-weight: 400;
       font-size: 14px;
       line-height: 1.14;
-      @media screen and (min-width: $desktop) {
-        line-height: 1.5;
+      // margin-bottom: 28px;
+      width: 253px;
+
+      @media screen and (min-width: 1280px) {
+      line-height: 1.5;
       }
     }
-  }
 }
 
 .container-features {
-  margin-left: 90px;
+
+
+  @media screen and (min-width: 1280px) {
+    margin-left: 90px;
+  }
 }
 .features {
   @extend %list;
-  margin-bottom: 28px;
 
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: 768px) {
     display: flex;
   }
 
-  @media screen and (min-width: $desktop) {
-    margin-left: auto;
-  }
 
   &__item {
     display: flex;
     flex-direction: column;
-    margin-bottom: 28px;
+    // margin-bottom: 28px;
     width: 253px;
+    margin-left: 0;
+    &:not(:last-child) {
+      margin-right: 67px;
+    }
   }
   &__icon {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 8px;
     background-color: $White;
     width: 48px;
     height: 48px;
     border-radius: 50%;
     border: transparent;
-    @media screen and (min-width: $desktop) {
+    @media screen and (max-width: 1279px) {
+      margin-bottom: 8px;
+    }
+
+    @media screen and (min-width: 1280px) {
       margin-bottom: 10px;
     }
   }
@@ -152,13 +180,23 @@
   color: $Black-text;
   width: 106px;
   height: 40px;
-  margin-left: 90px;
-  margin-top: 32px;
-  margin-bottom: 100px;
+  margin-top: 28px;
+  margin-bottom: 60px;
 
   background-color: $Background-cl;
   border: 2px solid $Green-text;
   border-radius: 30px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 40px;
+    margin-bottom: 100px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-top: 32px;
+    margin-left: 90px;
+    margin-bottom: 100px;
+  }
 
   &:hover,
   &:focus {

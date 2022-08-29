@@ -5,9 +5,15 @@
     min-width: 320px;
     padding-top: 60px;
 
-    @media screen and (min-width: $desktop) {
+    @media screen and (min-width: 768px) {
+      margin-bottom: 199px;
+      width: 100%;
+    }
+
+    @media screen and (min-width: 1280px) {
       padding-top: 14px;
-      margin-bottom: -118px;
+      margin-bottom: 328px;
+      width: 100%;
     }
 
 
@@ -18,10 +24,7 @@
         width: 280px;
         margin-bottom: 28px;
 
-
-        // margin-right: auto;
-        // margin-left: auto;
-        @media screen and (min-width: $tablet) {
+        @media screen and (min-width: 768px) {
             width: 537px;
             font-size: 42px;
             line-height: 1.19;
@@ -56,13 +59,31 @@
         }
     }
 
+    &__btn-order {
+      background-color: $Button-green;
+      font-weight: 500;
+      font-size: 13px;
+      line-height: 1.5;
+      width: 98px;
+      height: 32px;
+      background: $Button-green;
+      border-radius: 30px;
+      border: transparent;
+      margin-bottom: 73px;
+      cursor: pointer;
+
+      transition: background-color $cubic;
+      &:hover, &:focus{
+      background-color:$Button-light-green;
+      }
+    }
+
 
 
     &__container {
         @media screen and (min-width: $desktop) {
             display: flex;
             align-items: center;
-
         }
     }
 
@@ -73,16 +94,17 @@
             display: none;
         }
 
-        @media screen and (max-width:1279px) {
+        @media screen and (min-width: 768px) and (max-width:1279px) {
             position: absolute;
             top: 149px;
-            // right: 32px;
-            transform: translateX(400px);
+            margin-left: auto;
+            transform: translateX(398px);
         }
 
-        @media screen and (min-width: $desktop) {
+        @media screen and (min-width: 1280px) {
           margin-left: 166px;
-          transform: translateX(-16px);
+          padding-left: 8px;
+          padding-right: 8px;
       }
 
     }
@@ -109,7 +131,7 @@
         width: 528px;
         border: 26px solid $Primary-yellow-main;
     }}
-&-btn{
+&-btn {
     width: 34px;
     height: 28px;
     display: flex;
