@@ -1,6 +1,5 @@
 .offer {
   display: flex;
-  padding-bottom: 60px;
   background-repeat: no-repeat;
   background-size: 100% 1050px;
   background-image: url(/src/images/offerings/background/mob-320.png);
@@ -10,24 +9,22 @@
   }
 
   @media screen and (min-width: $tablet) {
-    padding-bottom: 100px;
     background-size: 100% 1140px;
     background-image: url(/src/images/offerings/background/tablet.png);
   }
 
   @media screen and (min-width: $desktop) {
-    background-size: 100% 824px;
+    margin-bottom: 100px;
+    background-position: center;
     background-image: url(..//images/offerings/background/desktop.png);
-    transform: translateY(-133px);
+    background-size: 100% 824px;
 
   }
 
   &__img {
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 60px;
     width: 280px;
     height: 309px;
+    margin-top: 177px;
 
     // background-repeat: no-repeat;
     // background-position: center;
@@ -44,7 +41,6 @@
     }
 
     @media screen and (min-width: $desktop) {
-      margin-top: 177px;
       width: 550px;
       height: 604px;
       // background-repeat: no-repeat;
@@ -69,12 +65,13 @@
       font-size: 48px;
       line-height: 1.2;
       margin-left: 90px;
+      margin-top: 260px;
     }
   }
   &__descr {
     margin-bottom: 28px;
     @media screen and (min-width: $tablet) {
-      margin-bottom: 40px;
+      // margin-bottom: 40px;
       margin-left: 90px;
       width: 500px;
     }
@@ -84,8 +81,7 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 1.14;
-    margin-bottom: 28px;
-    margin-top: 260px;
+    // margin-bottom: 28px;
     min-width: 272px;
 
     &__subtitle {
@@ -157,6 +153,8 @@
   width: 106px;
   height: 40px;
   margin-left: 90px;
+  margin-top: 32px;
+  margin-bottom: 100px;
 
   background-color: $Background-cl;
   border: 2px solid $Green-text;

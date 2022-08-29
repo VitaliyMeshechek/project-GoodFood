@@ -1,9 +1,11 @@
 .favorites {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  @media screen and (max-width: 767px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
 
   @media screen and (min-width: $tablet) {
-    padding-top: 100px;
     padding-bottom: 100px;
   }
 
