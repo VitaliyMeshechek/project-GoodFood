@@ -20,7 +20,6 @@
   @media screen and (min-width: 1280px) {
     flex-direction: row;
     margin-top: -447px;
-    margin-bottom: 100px;
     background-position: center;
     background-image: url(..//images/offerings/background/desktop.png);
     background-size: 100% 824px;
@@ -220,4 +219,8 @@
 
   background-color: transparent;
   border: transparent;
+
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
 }
