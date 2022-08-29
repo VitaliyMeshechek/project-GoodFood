@@ -205,11 +205,18 @@
   }
 }
 
+.container-wrap {
+  display: flex;
+  align-items: baseline;
+}
+
 .btn-more {
   font-family: 'Roboto';
+  display: flex;
   font-weight: 400;
   font-size: 13.6667px;
   line-height: 1.46;
+  margin-left: 24px;
 
   background-color: transparent;
   border: transparent;
