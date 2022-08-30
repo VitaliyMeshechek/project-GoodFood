@@ -65,3 +65,9 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
 }); // end ready
+
+
+// slider
+import $ from "jquery";
+import "slick-carousel";
+$(".carousel").slick();
