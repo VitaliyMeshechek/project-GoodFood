@@ -21,7 +21,7 @@
 
     }
 
-    @media screen and (min-width: $tablet ) {
+    @media screen and (min-width: 768px ) {
         padding: 100px 0;
 
         background-image: url('../images/footer/fruits-bottom-tb@1x.png'),
@@ -40,7 +40,7 @@
         }
     }
 
-    @media screen and (min-width: $desktop ) {
+    @media screen and (min-width: 1280px ) {
         background-image: url('../images/footer/fruits-bottom-dt@1x.png');
         background-repeat: no-repeat;
         background-position: bottom 0px center;
@@ -56,7 +56,7 @@
 }
 
 .ftr__content-wrap {
-    @media screen and (min-width: $desktop) {
+    @media screen and (min-width: 1280px) {
         display: flex;
         margin-bottom: 80px;
     }
@@ -74,12 +74,12 @@
 
     margin-bottom: 40px;
 
-    @media screen and (min-width: $tablet) {
+    @media screen and (min-width: 768px) {
         display: flex;
         gap: 117px;
     }
 
-    @media screen and (min-width: $desktop) {
+    @media screen and (min-width: 1280px) {
         gap: 145px;
     }
 }
@@ -92,7 +92,7 @@
     font-size: 14px;
     line-height: calc(16 / 14);
 
-    @media screen and (min-width: $tablet) {
+    @media screen and (min-width: 768px) {
         padding-top: 18px;
     }
 }
@@ -107,7 +107,7 @@
         width: 0;
         height: 16;
     }
-    
+
     &:hover,
     &:focus {
         @media screen and (min-width: 768px) {
@@ -132,28 +132,33 @@
 
 
 .ftr__sbscr-form {
-    @media screen and (min-width: $tablet) {
+    @media screen and (min-width: 768px) {
         gap: 12px;
         margin-bottom: 100px;
     }
 
-    @media screen and (min-width: $desktop) {
+    @media screen and (min-width: 1280px) {
         margin-left: auto;
         margin-bottom: 0;
     }
 }
 
 .ftr__sbscr-cover {
+  @media screen and (min-width: 320px) and (max-width: 479px) {
     display: flex;
-    // position: relative;
+    flex-direction: column;
+    gap: 20px;
+  }
 
-    @media screen and (max-width: 767px) {
-        flex-direction: column;
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+        display: flex;
+        flex-direction: row;
         gap: 20px;
-        margin-bottom: 20px;
     }
 
-    @media screen and (min-width: $tablet) {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-direction: row;
         gap: 13px;
     }
 
@@ -164,7 +169,8 @@
 }
 
 .ftr__sbscr-input {
-    @media screen and (min-width: 767px) {
+  display: flex;
+    @media screen and (max-width: 1279px) {
         width: 279px;
         height: 42px;
     }
@@ -174,13 +180,15 @@
     background-color: #ffffff;
     border: 0.854167px solid $Green-text;
     transition: background-color $cubic;
+    width: 103px;
+    height: 42px;
 
     &:hover,
     :focus {
         background-color: $Primary-yellow-main;
     }
 
-    @media screen and (min-width: $tablet) {
+    @media screen and (min-width: 768px) {
         margin: 0;
     }
 }
@@ -196,7 +204,7 @@
     font-size: 10px;
     line-height: calc(12 / 10);
 
-    @media screen and (min-width: $tablet) {
+    @media screen and (min-width: 768px) {
         font-size: 12px;
         line-height: calc(14 / 12);
     }
@@ -208,7 +216,7 @@
 
 .secondary-content {
 
-    @media screen and (min-width: $tablet) {
+    @media screen and (min-width: 768px) {
         display: flex;
         margin-bottom: 0;
     }
@@ -224,11 +232,11 @@
         margin-bottom: 40px;
     }
 
-    @media screen and (min-width: $tablet) {
+    @media screen and (min-width: 768px) {
         gap: 12px;
     }
 
-    @media screen and (min-width: $desktop) {
+    @media screen and (min-width: 1280px) {
         gap: 20px;
     }
 }
@@ -237,7 +245,7 @@
     font-size: 10px;
     line-height: calc(12 / 10);
 
-    @media screen and (min-width: $tablet) {
+    @media screen and (min-width: 768px) {
         font-size: 12px;
         line-height: calc(14 / 12);
     }
@@ -253,7 +261,7 @@
     font-size: 10px;
     line-height: calc(12 / 10);
 
-    @media screen and (min-width: $tablet) {
+    @media screen and (min-width: 768px) {
         margin-left: auto;
         font-size: 12px;
         line-height: calc(14 / 12);

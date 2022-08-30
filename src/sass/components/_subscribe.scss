@@ -11,6 +11,7 @@
   height: 42px;
   padding-left: 12px;
   position: relative;
+  width: 279px;
 
   background: #FFFFFF;
   border: 0.854167px solid $Primary-yellow-main;
@@ -37,22 +38,29 @@
 
 .subscribe__btn{
   padding: 10px 21px;
-  margin-left: auto;
   border-radius: 30px;
+  width: 103px;
+  height: 42px;
 
   font-weight: 500;
   font-size: 13px;
   line-height: calc(20 / 13);
   cursor: pointer;
+  @media screen and (max-width: 479px) {
+    margin-left: auto;
+   flex-direction: column;
+  }
 }
 
 .sbscr-form__text{
   font-size: 10px;
   line-height: calc(12 / 10);
+  margin-top: 20px;
 
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: 768px) {
       font-size: 12px;
       line-height: calc(14 / 12);
+      margin-top: 12px;
   }
 }
 
