@@ -15,11 +15,12 @@
 
 
 .nav__link {
+  position: relative;;
   display: inline-flex;
   @extend %link;
   color: $Additional-text-black;
   cursor: pointer;
-  transition: color $cubic, text-decoration $cubic ;
+  transition: color $cubic;
 
   @media screen and (min-width: 768px) {
       height: auto;
@@ -30,8 +31,24 @@
   &:hover,
   &:focus {
       color: $Button-green;
-      text-decoration: underline;
+      // text-decoration: underline;
   }
+}
+
+.nav__link::after {
+  border-bottom: solid $Button-green 1px;
+  content: "";
+  opacity: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  transition: opacity $cubic;
+}
+
+.nav__link:hover::after,
+.nav__link:focus::after {
+  opacity: 1;
 }
 
 .nav__link--modal {

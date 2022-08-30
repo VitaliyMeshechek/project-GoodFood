@@ -1,3 +1,7 @@
+body{
+    padding-top: 72px;
+}
+
 .header{
     width: 100%;
     height: 72px;
@@ -29,67 +33,68 @@
     }
 }
 
-.header__logo {
-    display: inline-flex;
-     width: 66px;
-     height: 52px;
-    stroke-width: 0;
-    stroke: currentColor;
-    fill: currentColor;
-    margin-right: auto;
-}
+// .header__logo {
+//     display: inline-flex;
+//      width: 66px;
+//      height: 52px;
+//     stroke-width: 0;
+//     stroke: currentColor;
+//     fill: currentColor;
+//     margin-right: auto;
+// }
 
 
 // Блок навігаціі
-.nav{
-    display: flex;
-}
+// .nav{
+//     display: flex;
+// }
 
-.nav__list{
-    display: flex;
-    padding: 0px;
-    list-style: none;
-    flex-direction: column;
+// .nav__list{
+//     display: flex;
+//     padding: 0px;
+//     list-style: none;
+//     flex-direction: column;
 
-    @media screen and (min-width: 768px)  {
-        flex-direction: row;
-        gap: 28px;
-    }
+//     @media screen and (min-width: 768px)  {
+//         flex-direction: row;
+//         gap: 28px;
+//     }
 
-}
+// }
 
-.nav__item{
-    display: flex;
-}
+// .nav__item{
+//     display: flex;
+// }
 
 
-.nav__link{
-    display: inline-flex ;
-    color: inherit;
-    text-decoration: none;
-    color: $Black-text;
+// .nav__link{
+//     display: inline-flex ;
+//     text-decoration: none;
+//     color: $Black-text;
+    
+    
+//     font-size: 14px;
+//     line-height: calc(16 / 14);
+
+//         @media screen and (min-width: 768px) {
+//             height: auto;
+//             width: auto;
+//             padding: 0px;
+//         }
+
+//     transition: color $cubic, text-decoration $cubic ;
+//     &:hover,
+//     &:focus{
+//             color: $Button-green;
+//             text-decoration: underline;
+//     }
+
+// }
+
+.nav__link--modal{
     height: 50px;
     width: 130px;
     padding: 16px 10px 16px 16px;
-    font-size: 14px;
-    line-height: calc(16 / 14);
-
-        @media screen and (min-width: 768px) {
-            height: auto;
-            width: auto;
-            padding: 0px;
-        }
-
-    transition: color $cubic, text-decoration $cubic ;
-    &:hover,
-    &:focus{
-            color: $Button-green;
-            text-decoration: underline;
-    }
-
-}
-
-.nav__link--modal{
     font-size: 16px;
     line-height: calc(19/16);
     background-color: inherit;
@@ -199,3 +204,4 @@
     opacity: 1;
     visibility: visible;
 }
+
