@@ -13,7 +13,6 @@
 @import './components/mixins';
 @import './components/logo';
 @import './components/nav';
-@import './libs/slick';
 
 // Layout
 @import './layout/header';
@@ -23,3 +22,5 @@
 @import './layout/customerssay';
 @import './layout/subscribe';
 @import './layout/footer';
+
+@import './libs/slick';

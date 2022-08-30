@@ -1,10 +1,10 @@
-@import "../../../node_modules/slick-carousel/slick/slick.scss";
+@import "..//..//..//node_modules/slick-carousel/slick/slick.scss";
 
 .carousel {
 
     position: relative;
-    
-    
+
+
         @media screen and (max-width:767px) {
         display: none;
     }
@@ -20,15 +20,13 @@
 
     @media screen and (min-width: 1280px) {
     margin-left: 166px;
-    padding-left: 8px;
-    padding-right: 8px;
     width: 580px;
     height: 580px;
-}  
+}
 
 
 &__img {
-    
+
     box-sizing: content-box;
     background-color: $Background-cl;
     border: 14px solid $Primary-yellow-main;
@@ -45,7 +43,7 @@
 
 }
 .slick-arrow{
-    
+
     width: 34px;
     height: 28px;
     display: flex;
@@ -53,13 +51,14 @@
     justify-content: center;
     cursor: pointer;
     font-size: 0;
+    z-index: 100;
 
     border: transparent;
     border-radius: 4px;
     background-color: $White;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
     position: absolute;
-    
+
 
     transition: box-shadow $cubic;
 
@@ -96,7 +95,7 @@
             background-position: center;
             background-size: contain;
             background-repeat: no-repeat;
-        
+
             width: 11px;
             height: 20px;
             @media screen and (min-width: 1280px){
@@ -114,7 +113,7 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
-    
+
         width: 11px;
         height: 20px;
         @media screen and (min-width: 1280px){
@@ -124,5 +123,5 @@
 }}
 .slick-slide{
     width: 580px;
-    
+
 }
