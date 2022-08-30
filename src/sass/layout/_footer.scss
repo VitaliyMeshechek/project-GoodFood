@@ -108,14 +108,14 @@
         height: 16;
     }
 
-    &:hover,
-    &:focus {
-        @media screen and (min-width: 768px) {
-            background-color: white;
-            color: $Button-green;
-            text-decoration: underline;
-        }
-    }
+    // &:hover,
+    // &:focus {
+    //     @media screen and (min-width: 768px) {
+    //         background-color: white;
+    //         color: $Button-green;
+    //         text-decoration: underline;
+    //     }
+    // }
 }
 
 .ftr__claim {
