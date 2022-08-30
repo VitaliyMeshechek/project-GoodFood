@@ -10,6 +10,7 @@ html {
 
 body {
   font-family: 'Roboto', sans-serif;
+  // padding-top: 72px;
 
   color: $Black-text;
   background-color: $Background-cl;
@@ -17,7 +18,7 @@ body {
 
 img {
   display: block;
-  width: 100%;
+  // width: 100%;
 
   object-fit: cover;
   object-position: center;

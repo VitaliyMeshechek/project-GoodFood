@@ -1,12 +1,20 @@
-
-
-
 .hero {
     position: relative;
 
     color: $Black-text;
     min-width: 320px;
     padding-top: 60px;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 199px;
+      width: 100%;
+    }
+
+    @media screen and (min-width: 1280px) {
+      padding-top: 14px;
+      margin-bottom: 328px;
+      width: 100%;
+    }
 
 
     &__title {
@@ -16,17 +24,14 @@
         width: 280px;
         margin-bottom: 28px;
 
-
-        // margin-right: auto;
-        // margin-left: auto;
-        @media screen and (min-width: $tablet) {
+        @media screen and (min-width: 768px) {
             width: 537px;
             font-size: 42px;
             line-height: 1.19;
             margin-bottom: 44px;
         }
 
-        @media screen and (min-width: $desktop) {
+        @media screen and (min-width: 1280px) {
             width: 503px;
             font-size: 48px;
             line-height: 1.21;
@@ -41,46 +46,74 @@
         margin-bottom: 28px;
         min-width: 266px;
 
-        @media screen and (min-width: $tablet) {
+        @media screen and (min-width: 768px) {
             width: 336px;
             font-size: 16px;
             line-height: 1.5;
             margin-bottom: 40px;
         }
 
-        @media screen and (min-width: $desktop) {
+        @media screen and (min-width: 1280px) {
             width: 502px;
             margin-bottom: 40px;
         }
     }
 
+    &__btn-order {
+      background-color: $Button-green;
+      font-weight: 500;
+      font-size: 13px;
+      line-height: 1.5;
+      width: 98px;
+      height: 32px;
+      background: $Button-green;
+      border-radius: 30px;
+      border: transparent;
+      cursor: pointer;
 
+      transition: background-color $cubic;
+      &:hover, &:focus{
+      background-color:$Button-light-green;
+      }
+      @media screen and (min-width: 320px) and (max-width: 767px) {
+        margin-bottom: 50px;
+      }
+
+      @media screen and (min-width: 768px) {
+        margin-bottom: 73px;
+      }
+
+      @media screen and (min-width: 1280px) {
+        margin-bottom: 3px;
+      }
+    }
 
     &__container {
-        @media screen and (min-width: $desktop) {
+        @media screen and (min-width: 1280px) {
             display: flex;
             align-items: center;
-
         }
     }
 
     &__slider {
         position: relative;
-        
+
         @media screen and (max-width:767px) {
             display: none;
         }
 
-        @media screen and (min-width: $desktop) {
-            margin-left: auto;
-            transform: translateX(-15px);
-        }
-
-        @media screen and (max-width:1279px) {
+        @media screen and (min-width: 768px) and (max-width:1279px) {
             position: absolute;
             top: 149px;
-            right: 40px;
+            margin-left: auto;
+            transform: translateX(398px);
         }
+
+        @media screen and (min-width: 1280px) {
+          margin-left: 166px;
+          padding-left: 8px;
+          padding-right: 8px;
+      }
 
     }
 }
@@ -89,30 +122,30 @@
     &__svg{
     width: 11px;
     height: 20px;
-    @media screen and (min-width: $desktop){
+    @media screen and (min-width: 1280px){
         width:16px;
         height:29px;
     }}
-    
+
     &__img {
     border: 14px solid $Primary-yellow-main;
     border-radius: 50%;
 
-    @media screen and (min-width: $tablet) {
-        width: 292px
+    @media screen and (min-width: 768px) {
+        width: 292px;
     }
 
-    @media screen and (min-width: $desktop) {
+    @media screen and (min-width: 1280px) {
         width: 528px;
         border: 26px solid $Primary-yellow-main;
     }}
-&-btn{
+&-btn {
     width: 34px;
     height: 28px;
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
     border: transparent;
     border-radius: 4px;
     background-color: $White;
@@ -120,23 +153,24 @@
     position: absolute;
 
     transition: box-shadow $cubic;
-    
+
         &:hover,
         &:focus {
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
         }
-    @media screen and (min-width: $desktop){
+    @media screen and (min-width: 1280px){
     width: 48px;
     height: 40px;
     border-radius: 8px;
     transition:fill $cubic;
-    
-        &:hover{
+
+        &:hover,
+        &:focus {
             fill:$Green-text;
         }
-    
+
     }
-    
+
     &--prev{
         top:50%;
         left: 0;
@@ -148,4 +182,8 @@
         transform: translate(25%, -50%);
     }
 }
+}
+
+.box {
+  display: flex;
 }

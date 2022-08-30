@@ -1,4 +1,4 @@
-<section class="container">
+<section class="container" id="home">
     <div class="hero hero__container">
         <div class="hero__descr">
             <h1 class="hero__title">Enjoy Your Favorite Food From Anywhere</h1>
@@ -6,20 +6,84 @@
                 consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus,
                 mi quis viverra ornare,
                 eros dolor interdum nulla,
-                ut commodo diam libero vitae erat.</p><button tupe="button" class="btn-order">Order Now</button>
+                ut commodo diam libero vitae erat.</p><button tupe="button" class="hero__btn-order">Order Now</button>
         </div>
         <div class="hero__slider">
-            <button class="slider-btn slider-btn--prev"> 
-            <svg class=" slider__svg" >
-                <use href=".\images\Icons\icons.svg#arrow-left-vektor" ></use></svg>
+            <button class="slider-btn slider-btn--prev">
+            <svg class=" slider__svg" width="40" height="48">
+                <use href="./images/Icons/icons.svg#arrow-left-vektor"></use></svg>
             </button>
             <img srcset="./images/hero/slide-1@1x_292.png 292w, ./images/hero/slide-1@2x_292.png  584w, ./images/hero/slide-1@1x_528.png 528w, ./images/hero/slide-1@2x_528.png 1056w"
                 sizes="(min-width:1280px) 528px, (min-width:768px) 292px, 100vw" src="./images/hero/slide-1@1x_528.png"
                 alt="dish" class="slider__img">
             <button class="slider-btn slider-btn--next">
-                <svg class="slider__svg"  >
-                <use href=".\images\Icons\icons.svg#arrow-right-vektor"></use>
+                <svg class="slider__svg" width="40" height="48">
+                <use href="./images/Icons/icons.svg#arrow-right-vektor"></use>
             </svg></button>
         </div>
+    </div>
+    <div class="offer" id="about">
+    <img
+    srcset="./images/offerings/apple/apples-desktop-550.png,
+           ./images/offerings/apple/apples-desktop-1100.png"
+    class="offer__img"
+    src="./images/offerings/apple/apples-desktop-550.png"
+    width="550"
+    height="604"
+    alt="apple"/>
+    <img
+    srcset="./images/offerings/apple/apples-tablet-704.png,
+           ./images/offerings/apple/apples-tablet-1408.png"
+    class="offer__img-apples"
+    src="./images/offerings/apple/apples-tablet-704.png"
+    width="704"
+    height="394"
+    alt="apples"/>
+    <img
+    class="offer__img-apple"
+    src="./images/offerings/apple/Apple-mob-280.png"
+    width="280"
+    height="309"
+    alt="apple"/>
+    <div class="offer__text">
+      <h2 class="offer__title">What’s Special About Our Offerings</h2>
+      <p class="offer__descr">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+        varius enim in eros elementum tristique. Duis cursus, mi quis viverra
+        ornare, eros dolor interdum &nbsp; nulla, ut commodo diam libero vitae erat.
+      </p>
+      <div class="container-features">
+      <ul class="features">
+        <li class="features__item">
+          <div class="features__icon">
+            <svg class="features__svg" width="48" height="48">
+              <use href="./images/Icons/icons.svg#rocket"></use>
+            </svg>
+          </div>
+          <h3 class="offer__subtitle">Fasest Delivery</h3>
+          <p class="offer__subdescr">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+            varius enim in eros.
+          </p>
+        </li>
+        <li class="features__item">
+          <div class="features__icon">
+            <svg class="features__svg" width="48" height="48">
+              <use href="./images/Icons/icons.svg#order"></use>
+            </svg>
+          </div>
+          <h3 class="offer__subtitle">Easy to order</h3>
+          <p class="offer__subdescr">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+            varius enim in eros.
+          </p>
+        </li>
+      </ul>
+    </div>
+    <div class="container-wrap">
+    <button tupe="button" class="btn-order offer__btn-order">Order Now</button>
+    <button tupe="button" class="btn-more">Read More ></button>
+  </div>
+  </div>
     </div>
 </section>
