@@ -17,7 +17,6 @@
 
     @media screen and (min-width: 1280px) {
       padding-top: 14px;
-      // padding-right: 14px;      padding-bottom: 28px;
       width: 100%;
     }
 
@@ -127,9 +126,21 @@
     &__svg{
     width: 11px;
     height: 20px;
+
+    transition:fill $cubic;
+
+    &:hover {
+        fill:$Green-text;
+    }
     @media screen and (min-width: 1280px){
         width:16px;
         height:29px;
+
+        transition:fill $cubic;
+
+        &:hover {
+            fill:$Green-text;
+        }
     }}
 
     &__img {
@@ -150,6 +161,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 
     border: transparent;
     border-radius: 4px;
@@ -157,22 +169,26 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
     position: absolute;
 
-    transition: box-shadow $cubic;
+  transition: box-shadow $cubic;
+  @media screen and (min-width: $tablet) and (max-width: 1279px){
+      &:hover,
+      &:focus {
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+      }}
 
-        &:hover,
-        &:focus {
-            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
-        }
     @media screen and (min-width: 1280px){
     width: 48px;
     height: 40px;
     border-radius: 8px;
     transition:fill $cubic;
 
-        &:hover,
-        &:focus {
-            fill:$Green-text;
-        }
+      &:hover {
+          fill:$Green-text;
+      }
+
+      &:focus {
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+      }
 
     }
 
@@ -180,11 +196,21 @@
         top:50%;
         left: 0;
         transform: translate(-25%,-50%);
+
+
+        &:hover {
+            fill:$Green-text;
+        }
     }
     &--next{
         top:50%;
         right: 0;
         transform: translate(25%, -50%);
+
+
+        &:hover {
+            fill:$Green-text;
+        }
     }
 }
 }
