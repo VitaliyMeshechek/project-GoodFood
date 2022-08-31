@@ -26,7 +26,11 @@
       </ul>
     </nav>
     <!-- Order now -->
-    <button tupe="button" class="btn-order hide__nav-mobile btn-order--header">
+    <button
+      tupe="button"
+      class="btn-order hide__nav-mobile btn-order--header"
+      order-modal-open
+    >
       Order Now
     </button>
     <!-- Burger -->
@@ -72,3 +76,96 @@
 </div>
 
 <div class="overlay js-overlay-modal"></div>
+
+<div class="backdrop is-hidden" order-modal>
+  <div class="order-modal">
+    <button class="btn-modal" order-modal-close>
+      <svg class="icon close">
+        <use xlink:href="./images/Icons/icons.svg#close"></use>
+      </svg>
+    </button>
+
+    <h2 class="modal__title">Order Form</h2>
+    <form class="order__form">
+      <div class="order__cover">
+        <label class="order__label">
+          <p class="order__claim">Name</p>
+          <input
+            required
+            class="subscribe__input order__input"
+            type="text"
+            name="Name"
+            placeholder="Your name"
+          />
+          <span class="subscribe__warning order__warning">
+            <svg
+              class="subscribe__warning-icon ftr__warning-icon"
+              width="12"
+              height="12"
+            >
+              <use href="./images/Icons/icons.svg#eror"></use>
+            </svg>
+            Please, enter your name!
+          </span>
+        </label>
+      </div>
+      <div class="order__cover">
+        <label class="order__label">
+          <p class="order__claim">Subscribe</p>
+          <input
+            class="subscribe__input order__input"
+            type="email"
+            name="email"
+            placeholder="Enter your email"
+          />
+          <span class="subscribe__warning order__warning">
+            <svg
+              class="subscribe__warning-icon ftr__warning-icon"
+              width="12"
+              height="12"
+            >
+              <use href="./images/Icons/icons.svg#eror"></use>
+            </svg>
+            Not a valid email address (example@email.com)
+          </span>
+        </label>
+      </div>
+      <div class="order__cover">
+        <label class="order__label">
+          <p class="order__claim">Subscribe</p>
+          <input
+            class="subscribe__input order__input"
+            type="email"
+            name="email"
+            placeholder="Enter your email"
+          />
+          <span class="subscribe__warning order__warning">
+            <svg
+              class="subscribe__warning-icon ftr__warning-icon"
+              width="12"
+              height="12"
+            >
+              <use href="./images/Icons/icons.svg#eror"></use>
+            </svg>
+            Not a valid email address (example@email.com)
+          </span>
+        </label>
+      </div>
+    </form>
+  </div>
+</div>
+
+<script language="JavaScript">
+  (() => {
+    const refs = {
+      openModalBtn: document.querySelector('[order-modal-open]'),
+      closeModalBtn: document.querySelector('[order-modal-close]'),
+      modal: document.querySelector('[order-modal]'),
+    };
+    refs.openModalBtn.addEventListener('click', toggleModal);
+    refs.closeModalBtn.addEventListener('click', toggleModal);
+    function toggleModal() {
+      refs.modal.classList.toggle('is-hidden');
+    }
+  })();
+</script>
