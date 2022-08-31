@@ -77,6 +77,7 @@
 
 <div class="overlay js-overlay-modal"></div>
 
+<!-- Oder Form -->
 <div class="backdrop is-hidden" order-modal>
   <div class="order-modal">
     <button class="btn-modal" order-modal-close>
@@ -105,18 +106,22 @@
             >
               <use href="./images/Icons/icons.svg#eror"></use>
             </svg>
-            Please, enter your name!
+            The name must be between 3 and 25 characters
           </span>
         </label>
       </div>
       <div class="order__cover">
         <label class="order__label">
-          <p class="order__claim">Subscribe</p>
+          <p class="order__claim">Phone number</p>
           <input
+            required
             class="subscribe__input order__input"
-            type="email"
-            name="email"
-            placeholder="Enter your email"
+            type="tel"
+            name="tel"
+            placeholder="088 888 88 88"
+            pattern="[\d{3}\s\d{3}[\ ]\d{2}[\ ]\d{2}"
+            minlength="12"
+            maxlength="13"
           />
           <span class="subscribe__warning order__warning">
             <svg
@@ -126,18 +131,19 @@
             >
               <use href="./images/Icons/icons.svg#eror"></use>
             </svg>
-            Not a valid email address (example@email.com)
+            This phone must be in the format 099 000 00 00
           </span>
         </label>
       </div>
       <div class="order__cover">
         <label class="order__label">
-          <p class="order__claim">Subscribe</p>
+          <p class="order__claim">E-mail</p>
           <input
+            required
             class="subscribe__input order__input"
             type="email"
             name="email"
-            placeholder="Enter your email"
+            placeholder="example@gmail.com"
           />
           <span class="subscribe__warning order__warning">
             <svg
@@ -147,10 +153,13 @@
             >
               <use href="./images/Icons/icons.svg#eror"></use>
             </svg>
-            Not a valid email address (example@email.com)
+            Please enter a valid email address
           </span>
         </label>
       </div>
+      <button type="submit" class="order__submit">
+        <span>Send</span>
+      </button>
     </form>
   </div>
 </div>

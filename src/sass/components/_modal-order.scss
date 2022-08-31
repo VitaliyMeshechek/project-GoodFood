@@ -104,6 +104,7 @@
 .order__label {
     width: 100%;
     position: relative;
+    margin-bottom: 24px;
 }
 
 .order__claim {
@@ -130,3 +131,24 @@
     bottom: -14px;
     left: 14px;
 }
+
+
+.order__submit{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-right: auto;
+    margin-left: auto;
+
+    width: 106px;
+    height: 40px;
+    
+    border: 2px solid #7EB101;
+    border-radius: 30px;
+
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 150%;
+}
+
