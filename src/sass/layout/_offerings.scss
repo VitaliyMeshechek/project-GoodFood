@@ -1,9 +1,8 @@
 .offerings-section {
-  position: absolute;
   width: 100%;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 100% 1050px;
+  background-size: 100%;
   background-image: url(..//images/offerings/background/mob-320.png);
 
   @media screen and (min-width: 480px) {
@@ -15,7 +14,7 @@
   @media screen and (min-width: 768px) {
     flex-direction: column;
     // margin-top: -286px;
-    background-size: auto;
+    background-size: 100%;
     background-position: center;
     background-image: url(..//images/offerings/background/tablet.png);
   }
@@ -27,7 +26,6 @@
     background-image: url(..//images/offerings/background/desktop.png);
     background-size: 100% 824px;
     top: 500px;
-    height: 824px;
 
 
   }}
@@ -60,7 +58,7 @@
     }
 
     @media screen and (min-width: 1280px) {
-      margin-top: 177px;
+      // margin-top: 177px;
     }
   }
 
@@ -123,7 +121,7 @@
       font-size: 48px;
       line-height: 1.2;
       margin-left: 90px;
-      margin-top: 260px;
+      // margin-top: 260px;
     }
   }
   &__descr {
