@@ -67,15 +67,10 @@ document.addEventListener('DOMContentLoaded', function() {
 }); // end ready
 
 
-// slider
+// // slider
 import $ from "jquery";
 import "slick-carousel";
-$(".carousel").slick();
-
-// // slider
-// import $ from "jquery";
-// import "slick-carousel";
-// $(".carousel").slick({
-//    arrows:true,
-//    prevArrow: $('.prev'),
-//    nextArrow:$('.next')})
+$(".carousel").slick({
+   arrows:true,
+   prevArrow: $('.prev'),
+   nextArrow:$('.next')})
