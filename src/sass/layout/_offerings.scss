@@ -2,26 +2,23 @@
   width: 100%;
   background-repeat: no-repeat;
   background-position: bottom;
-  background-size: 100%;
+  background-size: 100% 1050px;
   background-image: url(..//images/offerings/background/mob-320.png);
 
   @media screen and (min-width: 480px) {
     background-image: url(..//images/offerings/background/mob-480.png);
 
-    // margin-top: -60px;
   }
 
   @media screen and (min-width: 768px) {
     flex-direction: column;
-    // margin-top: -286px;
-    background-size: 100%;
+    background-size: 100% 1140px;
     background-position: bottom;
     background-image: url(..//images/offerings/background/tablet.png);
   }
 
   @media screen and (min-width: 1280px) {
     flex-direction: row;
-    // margin-top: -447px;
     background-position: bottom;
     background-image: url(..//images/offerings/background/desktop.png);
     background-size: 100% 824px;
@@ -57,8 +54,6 @@
 
     @media screen and (min-width: 1280px) {
       padding-top: 16px;
-
-      // margin-top: 177px;
     }
   }
 
@@ -69,7 +64,6 @@
 
     @media screen and (min-width: 768px) and (max-width: 1279px) {
       flex-direction: column;
-      margin-top: 150px;
       margin-bottom:  60px;
     }
     @media screen and (min-width: 1280px) {
@@ -79,10 +73,8 @@
 
   &__img-apple {
     min-width: 280px;
-    // min-height: 100%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 82px;
     margin-bottom: 60px;
 
 
@@ -122,7 +114,6 @@
       line-height: 1.2;
       margin-left: 90px;
       padding-top: 99px;
-      // margin-top: 260px;
     }
   }
   &__descr {
@@ -225,12 +216,14 @@
   color: $Black-text;
   width: 106px;
   height: 40px;
-  margin-top: 28px;
-  margin-bottom: 60px;
-
   background-color: $Background-cl;
   border: 2px solid $Green-text;
   border-radius: 30px;
+
+  @media screen and (min-width: 480px) and (max-width: 480px) {
+    margin-top: 28px;
+    margin-bottom: 60px;
+  }
 
   @media screen and (min-width: 768px) {
     margin-top: 40px;

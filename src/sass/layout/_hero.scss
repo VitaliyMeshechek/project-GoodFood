@@ -1,24 +1,23 @@
 .section-hero {
-  // position: relative;
+  @media screen and (max-width: 1279px) {
+    padding-top: 60px;
+  }
 }
 
 .hero {
     position: relative;
 
     color: $Black-text;
-
-    padding-top: 60px;
+    padding-bottom: 50px;
 
     @media screen and (min-width: 768px) {
-      // margin-bottom: 199px;
       width: 100%;
+      padding-bottom: 50px;
     }
 
     @media screen and (min-width: 1280px) {
       padding-top: 14px;
-      padding-right: 14px;
       padding-bottom: 14px;
-      // margin-bottom: 328px;
       width: 100%;
     }
 
@@ -86,7 +85,7 @@
       }
 
       @media screen and (min-width: 768px) {
-        margin-bottom: 73px;
+        margin-bottom: 100px;
       }
 
       @media screen and (min-width: 1280px) {
