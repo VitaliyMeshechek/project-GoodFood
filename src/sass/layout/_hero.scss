@@ -1,3 +1,7 @@
+.section-hero {
+  // position: relative;
+}
+
 .hero {
     position: relative;
 
@@ -6,7 +10,7 @@
     padding-top: 60px;
 
     @media screen and (min-width: 768px) {
-      margin-bottom: 199px;
+      // margin-bottom: 199px;
       width: 100%;
     }
 
