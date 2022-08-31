@@ -101,22 +101,24 @@
         @media screen and (max-width:767px) {
             display: none;
         }
-
+    
         @media screen and (min-width: 768px) and (max-width:1279px) {
             position: absolute;
             top: 149px;
-            margin-left: auto;
-            transform: translateX(200px);
+            left: -30px;
+            transform: translateX(398px);
+            width: 320px;
+            height: 320px;
         }
-
+    
         @media screen and (min-width: 1280px) {
-          margin-left: 166px;
-          padding-left: 8px;
-          padding-right: 8px;
-      }
+        margin-left: 136px;
+        width: 580px;
+        height: 580px;
+    }
 
     }
-}
+    }
 
 .slider{
     &__svg{
@@ -127,19 +129,20 @@
         height:29px;
     }}
 
-    &__img {
-    border: 14px solid $Primary-yellow-main;
-    border-radius: 50%;
+    // &__img {
+    // border: 14px solid $Primary-yellow-main;
+    // border-radius: 50%;
 
-    @media screen and (min-width: 768px) {
-        width: 292px;
-    }
+    // @media screen and (min-width: 768px) {
+    //     width: 292px;
+    // }
 
-    @media screen and (min-width: 1280px) {
-        width: 528px;
-        border: 26px solid $Primary-yellow-main;
-    }}
+    // @media screen and (min-width: 1280px) {
+    //     width: 528px;
+    //     border: 26px solid $Primary-yellow-main;
+    // }}
 &-btn {
+    z-index: 3;
     width: 34px;
     height: 28px;
     display: flex;
@@ -153,22 +156,24 @@
     position: absolute;
 
     transition: box-shadow $cubic;
-
+    @media screen and (min-width: 768px) and (max-width: 1279px){
         &:hover,
         &:focus {
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
-        }
+        }}
     @media screen and (min-width: 1280px){
     width: 48px;
     height: 40px;
     border-radius: 8px;
     transition:fill $cubic;
 
-        &:hover,
-        &:focus {
+        &:hover {
             fill:$Green-text;
         }
-
+        
+        &:focus {
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+        }
     }
 
     &--prev{

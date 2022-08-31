@@ -70,4 +70,8 @@ document.addEventListener('DOMContentLoaded', function() {
 // slider
 import $ from "jquery";
 import "slick-carousel";
-$(".carousel").slick();
+$(".carousel").slick({
+   arrows:true,
+   prevArrow: $('.prev'),
+   nextArrow:$('.next')})
+   

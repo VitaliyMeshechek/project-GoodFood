@@ -10,16 +10,13 @@
     }
 
     @media screen and (min-width: 768px) and (max-width:1279px) {
-        position: absolute;
-        top: 149px;
-        margin-left: auto;
-        transform: translateX(398px);
+        
         width: 320px;
         height: 320px;
     }
 
     @media screen and (min-width: 1280px) {
-    margin-left: 166px;
+    
     width: 580px;
     height: 580px;
 }
@@ -42,86 +39,86 @@
     }}
 
 }
-.slick-arrow{
+// .slick-arrow{
 
-    width: 34px;
-    height: 28px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    font-size: 0;
-    z-index: 100;
+//     width: 34px;
+//     height: 28px;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     cursor: pointer;
+//     font-size: 0;
+//     z-index: 100;
 
-    border: transparent;
-    border-radius: 4px;
-    background-color: $White;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
-    position: absolute;
+//     border: transparent;
+//     border-radius: 4px;
+//     background-color: $White;
+//     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+//     position: absolute;
 
 
-    transition: box-shadow $cubic;
+//     transition: box-shadow $cubic;
 
-    &::before{
-        display: table;
-        content: "";
-    }
+//     &::before{
+//         display: table;
+//         content: "";
+//     }
 
-        &:hover,
-        &:focus {
-            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
-        }
-    @media screen and (min-width: 1280px){
-    width: 48px;
-    height: 40px;
-    border-radius: 8px;
-    transition:fill $cubic;
+//         &:hover,
+//         &:focus {
+//             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+//         }
+//     @media screen and (min-width: 1280px){
+//     width: 48px;
+//     height: 40px;
+//     border-radius: 8px;
+//     transition:fill $cubic;
 
-        &:hover,
-        &:focus {
-            fill:$Green-text;
-        }
+//         &:hover,
+//         &:focus {
+//             fill:$Green-text;
+//         }
 
-    }
+//     }
 
-}
-.slick-prev{
-        top:50%;
-        left: 0;
-        transform: translate(-25%,-50%);
-        &::before{
-            content: "";
-            background-image: url(../images/Icons/arrow-left-vektor.svg);
-            background-position: center;
-            background-size: contain;
-            background-repeat: no-repeat;
+// }
+// .slick-prev{
+//         top:50%;
+//         left: 0;
+//         transform: translate(-25%,-50%);
+//         &::before{
+//             content: "";
+//             background-image: url(../images/Icons/arrow-left-vektor.svg);
+//             background-position: center;
+//             background-size: contain;
+//             background-repeat: no-repeat;
 
-            width: 11px;
-            height: 20px;
-            @media screen and (min-width: 1280px){
-                width: 17px;
-                height: 30px;
-        }
-    }}
-.slick-next{
-    top:50%;
-    right: 0;
-    transform: translate(25%, -50%);
-    &::before{
-        content: "";
-        background-image: url(../images/Icons/arrow-right-vektor.svg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: contain;
+//             width: 11px;
+//             height: 20px;
+//             @media screen and (min-width: 1280px){
+//                 width: 17px;
+//                 height: 30px;
+//         }
+//     }}
+// .slick-next{
+//     top:50%;
+//     right: 0;
+//     transform: translate(25%, -50%);
+//     &::before{
+//         content: "";
+//         background-image: url(../images/Icons/arrow-right-vektor.svg);
+//         background-position: center;
+//         background-repeat: no-repeat;
+//         background-size: contain;
 
-        width: 11px;
-        height: 20px;
-        @media screen and (min-width: 1280px){
-            width: 17px;
-            height: 30px;
-    }
-}}
-.slick-slide{
-    width: 580px;
+//         width: 11px;
+//         height: 20px;
+//         @media screen and (min-width: 1280px){
+//             width: 17px;
+//             height: 30px;
+//     }
+// }}
+// .slick-slide{
+//     width: 580px;
 
-}
+// }
