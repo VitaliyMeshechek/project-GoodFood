@@ -1,7 +1,7 @@
 .hero {
     margin-left: auto;
     margin-right: auto;
-    position: relative;
+    
 
     color: $Black-text;
 
@@ -91,6 +91,7 @@
     }
 
     &__container {
+        position: relative;
         @media screen and (min-width:1280px) {
             display: flex;
             align-items: center;
@@ -106,7 +107,7 @@
     
         @media screen and (min-width: 768px) and (max-width:1279px) {
             position: absolute;
-            top: 149px;
+            top: 89px;
             left: 10px;
             transform: translateX(398px);
             width: 320px;
