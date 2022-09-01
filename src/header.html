@@ -26,7 +26,11 @@
       </ul>
     </nav>
     <!-- Order now -->
-    <button tupe="button" class="btn-order hide__nav-mobile btn-order--header">
+    <button
+      tupe="button"
+      class="btn-order hide__nav-mobile btn-order--header"
+      order-modal-open
+    >
       Order Now
     </button>
     <!-- Burger -->
@@ -72,3 +76,90 @@
 </div>
 
 <div class="overlay js-overlay-modal"></div>
+
+<!-- Oder Form -->
+<div class="backdrop is-hidden" order-modal>
+  <div class="order-modal">
+    <button class="btn-modal" order-modal-close>
+      <svg class="icon close">
+        <use xlink:href="./images/Icons/icons.svg#close"></use>
+      </svg>
+    </button>
+
+    <h2 class="modal__title">Order Form</h2>
+    <form class="order__form">
+      <div class="order__cover">
+        <label class="order__label">
+          <p class="order__claim">Name</p>
+          <input
+            required
+            class="subscribe__input order__input"
+            type="text"
+            name="Name"
+            placeholder="Your name"
+          />
+          <span class="subscribe__warning order__warning">
+            <svg
+              class="subscribe__warning-icon ftr__warning-icon"
+              width="12"
+              height="12"
+            >
+              <use href="./images/Icons/icons.svg#eror"></use>
+            </svg>
+            The name must be between 3 and 25 characters
+          </span>
+        </label>
+      </div>
+      <div class="order__cover">
+        <label class="order__label">
+          <p class="order__claim">Phone number</p>
+          <input
+            required
+            class="subscribe__input order__input"
+            type="tel"
+            name="tel"
+            placeholder="088 888 88 88"
+            pattern="[\d{3}\s\d{3}[\ ]\d{2}[\ ]\d{2}"
+            minlength="12"
+            maxlength="13"
+          />
+          <span class="subscribe__warning order__warning">
+            <svg
+              class="subscribe__warning-icon ftr__warning-icon"
+              width="12"
+              height="12"
+            >
+              <use href="./images/Icons/icons.svg#eror"></use>
+            </svg>
+            This phone must be in the format 099 000 00 00
+          </span>
+        </label>
+      </div>
+      <div class="order__cover">
+        <label class="order__label">
+          <p class="order__claim">E-mail</p>
+          <input
+            required
+            class="subscribe__input order__input"
+            type="email"
+            name="email"
+            placeholder="example@gmail.com"
+          />
+          <span class="subscribe__warning order__warning">
+            <svg
+              class="subscribe__warning-icon ftr__warning-icon"
+              width="12"
+              height="12"
+            >
+              <use href="./images/Icons/icons.svg#eror"></use>
+            </svg>
+            Please enter a valid email address
+          </span>
+        </label>
+      </div>
+      <button type="submit" class="order__submit">
+        <span>Send</span>
+      </button>
+    </form>
+  </div>
+</div>

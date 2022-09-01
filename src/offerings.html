@@ -62,7 +62,27 @@
       </ul>
     </div>
     <div class="container-wrap">
-    <button tupe="button" class="btn-order offerings__btn-order">Order Now</button>
-    <button tupe="button" class="btn-more">Read More ></button>
+    <button tupe="button" class="btn-order offerings__btn-order" order-modal-open3>Order Now</button>
+    <button tupe="button" class="btn-more">Read More</button>
   </div>
 </section>
+
+
+<script language="JavaScript">
+  (() => {
+    const refs = {
+      openModalBtn: document.querySelector('[order-modal-open]'),
+      openModalBtn2: document.querySelector('[order-modal-open2]'),
+      openModalBtn3: document.querySelector('[order-modal-open3]'),
+      closeModalBtn: document.querySelector('[order-modal-close]'),
+      modal: document.querySelector('[order-modal]'),
+    };
+    refs.openModalBtn.addEventListener('click', toggleModal);
+    refs.openModalBtn2.addEventListener('click', toggleModal);
+    refs.openModalBtn3.addEventListener('click', toggleModal);
+    refs.closeModalBtn.addEventListener('click', toggleModal);
+    function toggleModal() {
+      refs.modal.classList.toggle('is-hidden');
+    }
+  })();
+</script>
