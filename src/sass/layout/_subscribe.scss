@@ -1,0 +1,174 @@
+// -------- subscribe section --------
+
+// section
+.section__subscribe {
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 100px;
+  }
+}
+
+// банан
+.subscribe__banana {
+  height: 78px;
+  width: 280px;
+  background-image: url(../images/customerssay/banana-mob-@1x.png);
+  background-size: cover;
+
+  @media screen and (max-width: 767px) {
+  }
+
+  @media screen and (max-width: 767px) {
+    margin: 0 auto;
+    margin-bottom: 17px;
+    background-image: url(../images/customerssay/banana-mob-@1x.png);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/customerssay/banana-mob-@2x.png);
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/customerssay/banana-tabl-@1x.png);
+    width: 281px;
+    height: 136px;
+    margin-left: auto;
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/customerssay/banana-tabl-@2x.png);
+    }
+  }
+
+  @media screen and (max-width: 1279px) {
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    background-image: url(../images/customerssay/banana-deks-@1x.png);
+    width: 608px;
+    height: 266px;
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/customerssay/banana-deks-@2x.png);
+    }
+  }
+}
+
+.subscribe--flex {
+  @media screen and (min-width: 1280px) {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+}
+
+.subscribe__form {
+  margin-top: auto;
+}
+
+.subscribe__input {
+  height: 42px;
+  border: 0.854167px solid $Primary-yellow-main;
+  border-radius: 30px;
+  outline: transparent;
+
+  padding: 12px 0px 12px 11px;
+
+  &::placeholder {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 2.333;
+    color: #505050;
+  }
+
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
+
+  @media screen and (min-width: 768px) {
+    min-width: 395px;
+  }
+}
+
+.subscribe__btn {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1.5;
+
+  padding: 11px 22px;
+
+  background-color: $Button-green;
+
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $Button-light-green;
+  }
+
+  @media screen and (max-width: 767px) {
+    display: block;
+    margin-left: auto;
+    margin-top: 20px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-left: 22px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-left: 32px;
+  }
+}
+
+// notifications subscribe
+
+.subscribe__warning {
+  display: none;
+  align-items: center;
+  position: absolute;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1.5;
+
+  color: $Pink-cl-eror;
+
+  @media screen and (max-width: 767px) {
+        margin-top: 4px;
+  }
+}
+
+.offers__warning{
+    margin-top: 4px;
+}
+
+.subscribe__warning-icon {
+  margin-right: 4px;
+}
+
+// механизм появления ошибки
+
+.subscribe__input:invalid + .subscribe__warning {
+  display: flex;
+}
+
+.subscribe__input:invalid {
+  border-color: $Pink-cl-eror;
+}
+
+.subscribe__input:not(:placeholder-shown):valid {
+  border-color: $Green-text;
+}

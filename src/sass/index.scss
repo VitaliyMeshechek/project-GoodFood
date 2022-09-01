@@ -16,16 +16,14 @@
 @import './components/subscribe'; @import './components/modal-order';
 
 
+
 // Layout
 @import './layout/header';
 @import './layout/hero';
 @import './layout/offerings';
 @import './layout/favorites';
 @import './layout/customerssay';
+@import './layout/subscribe';
 @import './layout/footer';
 
-
-
-
-
-
+@import './libs/slick';

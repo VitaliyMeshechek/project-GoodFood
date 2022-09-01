@@ -1,0 +1,41 @@
+@import "..//..//..//node_modules/slick-carousel/slick/slick.scss";
+
+.carousel {
+
+    position: relative;
+
+
+        @media screen and (max-width:767px) {
+        display: none;
+    }
+
+    @media screen and (min-width: 768px) and (max-width:1279px) {
+        
+        width: 320px;
+        height: 320px;
+    }
+
+    @media screen and (min-width: 1280px) {
+    
+    width: 580px;
+    height: 580px;
+}
+
+
+&__img {
+
+    box-sizing: content-box;
+    background-color: $Background-cl;
+    border: 14px solid $Primary-yellow-main;
+    border-radius: 50%;
+
+    @media screen and (min-width: 768px) {
+        width: 292px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        width: 528px;
+        border: 26px solid $Primary-yellow-main;
+    }}
+
+}

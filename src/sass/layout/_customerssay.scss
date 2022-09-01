@@ -10,17 +10,23 @@
   list-style: none;
 }
 // section
-.section {
+.section__customers {
   padding-top: 60px;
-  padding-bottom: 60px;
-
-  @media screen and (min-width: 768px) and (max-width: 1279px){
-    padding-bottom: 100px;
-  }
 
   @media screen and (min-width: 1280px) {
     padding-top: 100px;
-    padding-bottom: 64px;
+  }
+
+  @media screen and (max-width: 767px) {
+    padding-bottom: 17px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    padding-bottom: 45px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-bottom: 134px;
   }
 }
 
@@ -108,17 +114,17 @@
     display: flex;
   }
 
-  @media screen and (max-width: 767px) {
-    margin-bottom: 17px;
-  }
+  // @media screen and (max-width: 767px) {
+  //   margin-bottom: 17px;
+  // }
 
-  @media screen and (min-width: 768px) and (max-width: 1279px) {
-    margin-bottom: 45px;
-  }
+  // @media screen and (min-width: 768px) and (max-width: 1279px) {
+  //   margin-bottom: 45px;
+  // }
 
-  @media screen and (min-width: 1280px) {
-    margin-bottom: 134px;
-  }
+  // @media screen and (min-width: 1280px) {
+  //   margin-bottom: 134px;
+  // }
 }
 
 // структура карточки
@@ -209,143 +215,4 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 1.5;
-}
-
-// -------- subscribe section --------
-
-// банан
-.subscribe__banana {
-  height: 78px;
-  width: 280px;
-  background-image: url(../images/customerssay/banana-mob-@1x.png);
-  background-size: cover;
-
-  @media screen and (max-width: 767px) {
-    margin: 0 auto;
-    margin-bottom: 17px;
-    background-image: url(../images/customerssay/banana-mob-@1x.png);
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url(../images/customerssay/banana-mob-@2x.png);
-    }
-  }
-
-  @media screen and (min-width: 768px) {
-    background-image: url(../images/customerssay/banana-tabl-@1x.png);
-    width: 281px;
-    height: 136px;
-    margin-left: auto;
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url(../images/customerssay/banana-tabl-@2x.png);
-    }
-  }
-
-  @media screen and (max-width: 1279px) {
-    margin-bottom: 20px;
-  }
-
-  @media screen and (min-width: 1280px) {
-    background-image: url(../images/customerssay/banana-deks-@1x.png);
-    width: 608px;
-    height: 266px;
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url(../images/customerssay/banana-deks-@2x.png);
-    }
-  }
-}
-
-.subscribe--flex {
-  @media screen and (min-width: 1280px) {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-  }
-}
-
-.offers-form {
-  @media screen and (min-width: 320px) and (max-width: 479px) {
-    display: flex;
-    flex-direction: column;
-    align-items: baseline;
-  }
-
-  @media screen and (min-width: 480px) and (max-width: 767px) {
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
-    gap: 22px;
-}
-
-@media screen and (min-width: 768px) {
-  display: flex;
-  flex-direction: row;
-  align-items: baseline;
-  gap: 22px;
-}
-}
-
-.offers-form__input {
-  display: flex;
-  padding: 12px 0px 12px 11px;
-
-  @media screen and (min-width: 768px) {
-    min-width: 395px;
-  }
-}
-
-.offers-form__btn {
-  display: flex;
-  background-color: $Button-green;
-  border: none;
-
-  &:hover,
-  &:focus {
-    background-color: $Button-light-green;
-  }
-
-  @media screen and (max-width: 767px) {
-    display: block;
-    margin-top: 20px;
-  }
-}
-
-// notifications subscribe
-
-.subscribe__warning {
-  display: none;
-  align-items: center;
-  position: absolute;
-
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 10px;
-  line-height: 1.5;
-
-  margin-top: 4px;
-
-  color: $Pink-cl-eror;
-}
-
-.subscribe__warning-icon {
-  margin-right: 4px;
-}
-
-// механизм появления ошибки
-
-.subscribe__input:invalid + .subscribe__warning {
-  display: flex;
-}
-
-.subscribe__input:invalid {
-  border-color: $Pink-cl-eror;
-}
-
-.subscribe__input:not(:placeholder-shown):valid {
-  border-color: $Green-text;
 }
