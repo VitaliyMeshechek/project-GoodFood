@@ -13,6 +13,7 @@
 @import './components/mixins';
 @import './components/logo';
 @import './components/nav';
+@import './components/modals';
 
 // Layout
 @import './layout/header';
@@ -22,6 +23,5 @@
 @import './layout/customerssay';
 @import './layout/subscribe';
 @import './layout/footer';
-@import './layout/modals';
 
 @import './libs/slick';
