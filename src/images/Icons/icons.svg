@@ -46,6 +46,20 @@
   <symbol id="close" viewBox="0 0 32 32">
 <path d="M23.733 10.304l-1.504-1.504-5.963 5.963-5.963-5.963-1.504 1.504 5.963 5.963-5.963 5.963 1.504 1.504 5.963-5.963 5.963 5.963 1.504-1.504-5.963-5.963 5.963-5.963z"></path>
 </symbol>
+<symbol id="checked" viewBox="0 0 32 32">
+<path fill="#ffd400" style="fill: var(--color1, #ffd400)" d="M32 16c0 8.837-7.163 16-16 16s-16-7.163-16-16c0-8.837 7.163-16 16-16s16 7.163 16 16z"></path>
+<path fill="#ff9f00" style="fill: var(--color2, #ff9f00)" d="M32 16c0-0.457-0.020-0.909-0.058-1.357l-7.262-7.261-17.299 17.299 7.262 7.262c0.447 0.038 0.9 0.058 1.357 0.058 8.837 0 16-7.163 16-16z"></path>
+<path fill="#7d0" style="fill: var(--color3, #7d0)" d="M16 3.75c-6.733 0-12.25 5.517-12.25 12.25s5.517 12.25 12.25 12.25 12.25-5.517 12.25-12.25-5.517-12.25-12.25-12.25z"></path>
+<path fill="#6b0" style="fill: var(--color4, #6b0)" d="M28.25 16c0 6.733-5.517 12.25-12.25 12.25v-24.5c6.733 0 12.25 5.517 12.25 12.25z"></path>
+<path fill="#e7e7e7" style="fill: var(--color5, #e7e7e7)" d="M22.977 13.918l-8.412 8.412-6.044-6.029 2.039-2.038 4.005 4.020 6.388-6.388z"></path>
+<path fill="#d3d3d8" style="fill: var(--color6, #d3d3d8)" d="M22.977 13.918l-6.977 6.977v-4.048l4.953-4.953z"></path>
+</symbol>
+<symbol id="unchecked" viewBox="0 0 32 32">
+<path fill="#ffd400" style="fill: var(--color1, #ffd400)" d="M32 16c0 8.837-7.163 16-16 16s-16-7.163-16-16c0-8.837 7.163-16 16-16s16 7.163 16 16z"></path>
+<path fill="#ff9f00" style="fill: var(--color2, #ff9f00)" d="M32 16c0-0.457-0.020-0.909-0.058-1.357l-7.262-7.261-17.299 17.299 7.262 7.262c0.447 0.038 0.9 0.058 1.357 0.058 8.837 0 16-7.163 16-16z"></path>
+<path fill="#7d0" style="fill: var(--color3, #7d0)" d="M16 3.75c-6.733 0-12.25 5.517-12.25 12.25s5.517 12.25 12.25 12.25 12.25-5.517 12.25-12.25-5.517-12.25-12.25-12.25z"></path>
+<path fill="#6b0" style="fill: var(--color4, #6b0)" d="M28.25 16c0 6.733-5.517 12.25-12.25 12.25v-24.5c6.733 0 12.25 5.517 12.25 12.25z"></path>
+</symbol>
 <!-- For valid input -->
   <symbol id="eror" viewBox="0 0 32 32">
 <path fill="none" stroke="#ff705d" style="stroke: var(--color1, #ff705d)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.2857" d="M16 11.429v6.857"></path>
