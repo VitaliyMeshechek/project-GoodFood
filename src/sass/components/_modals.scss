@@ -42,6 +42,12 @@
   padding: 40px;
 }
 
+.modal-btn--close {
+  position: absolute;
+  top: 30px;
+  right: 10px;
+}
+
 .modal-overlay.is-hidden .modal-container {
   opacity: 0;
   transform: translate(-50%, -50%) scale(0.3) rotate(360deg);
