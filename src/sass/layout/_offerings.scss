@@ -219,6 +219,7 @@
   background-color: $Background-cl;
   border: 2px solid $Green-text;
   border-radius: 30px;
+  cursor: pointer;
 
   @media screen and (min-width: 320px) and (max-width: 767px) {
     margin-top: 28px;

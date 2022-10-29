@@ -23,8 +23,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
          /* При каждом клике на кнопку мы будем забирать содержимое атрибута data-modal
             и будем искать модальное окно с таким же атрибутом. */
-         var modalId = this.getAttribute('data-modal'),
-             modalElem = document.querySelector('.modal[data-modal="' + modalId + '"]');
+         var modalId = this.getAttribute('data-modal-menu'),
+             modalElem = document.querySelector('.modal[data-modal-menu="' + modalId + '"]');
 
 
          /* После того как нашли нужное модальное окно, добавим классы
@@ -74,26 +74,4 @@ $(".carousel").slick({
    arrows:true,
    prevArrow: $('.prev'),
    nextArrow:$('.next')})
-
-
-   (() => {
-    const refs = {
-      openModalBtn: document.querySelector('[data-modal-open]'),
-      openModalBtn1: document.querySelector('[data-modal-open-1]'),
-      openModalBtn2: document.querySelector('[data-modal-open-2]'),
-      closeModalBtn: document.querySelector('[data-modal-close]'),
-      modal: document.querySelector('[data-modal]'),
-      body: document.querySelector('[data-page]'),
-    };
-
-    refs.openModalBtn.addEventListener('click', toggleModal);
-    refs.openModalBtn1.addEventListener('click', toggleModal);
-    refs.openModalBtn2.addEventListener('click', toggleModal);
-    refs.closeModalBtn.addEventListener('click', toggleModal);
-
-    function toggleModal() {
-      refs.modal.classList.toggle('backdrop--is-hiden');
-      document.body.classList.toggle('modal-open');
-    }
-  })();
 
