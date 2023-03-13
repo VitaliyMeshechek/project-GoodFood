@@ -108,13 +108,10 @@ body{
     transition: $cubic all;
 }
 
+
 /* Стили для модальных окон */
 
 .modal {
-
-    /* Скрываем окна  */
-    opacity: 0;
-    visibility: hidden;
 
     /*  Центрируем и задаем z-index */
     position: fixed;
@@ -123,9 +120,8 @@ body{
     z-index: 30;
         @media screen and (min-width: 480px) {
             right:  50%;
-            transform: translate(220px, 0px)
+            transform: translate(220px, 0px);
         }
-
 
     /* Должен быть выше чем у подложки*/
 
@@ -136,6 +132,12 @@ body{
     background-color: #fff;
     transition: $cubic all;
     overflow: hidden;
+}
+
+.modal.is-hidden-menu {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
 
 
