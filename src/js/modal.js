@@ -15,22 +15,15 @@
   refs.closeModalBtn.addEventListener('click', toggleModal);
 
 
-
-
   function toggleModal() {
     refs.modal.classList.toggle('is-hidden');
     refs.body.classList.toggle('modal-open');
     refs.body.classList.toggle('no-scroll');
-
-
   }
-
 
 
   function openModalMenu() {
     refs.modalMenu.classList.toggle('is-hidden-menu');
-    // document.addEventListener('keydown', event => closeModalEscape(event));
-    // refs.bodyMenu.classList.toggle('modal-open-menu');
   }
 })();
 
@@ -41,11 +34,11 @@
 
 // function closeModalEscape(event) {
 //   if (event.key === 'Escape') {
-//     console.log(event.key === 'Escape')
+//
 //   return;
-//     // console.log(document.body.addEventListener('keydown', event => closeModalEscape(event)))
+//
 //   }
-//   // document.body.removeEventListener('keydown', event => closeModalEscape(event));
+//
 //   toggleModal();
 // }
 
