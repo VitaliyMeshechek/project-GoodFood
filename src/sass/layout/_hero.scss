@@ -1,7 +1,7 @@
 .hero {
     margin-left: auto;
     margin-right: auto;
-    
+
 
     color: $Black-text;
 
@@ -104,7 +104,7 @@
         @media screen and (max-width:767px) {
             display: none;
         }
-    
+
         @media screen and (min-width: 768px) and (max-width:1279px) {
             position: absolute;
             top: 89px;
@@ -113,7 +113,7 @@
             width: 320px;
             height: 320px;
         }
-    
+
         @media screen and (min-width:1280px) {
         margin-left: 152px;
         width: 580px;
@@ -132,7 +132,7 @@
         height:29px;
     }}
 
-    
+
 &-btn {
     z-index: 3;
     width: 34px;
@@ -163,7 +163,7 @@
         &:hover {
             fill:$Green-text;
         }
-        
+
         &:focus {
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
         }
