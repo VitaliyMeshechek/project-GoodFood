@@ -1,0 +1,1 @@
+{"mappings":"AAAAA,EAAEC,UAAUC,OAAM,WAChBF,EAAE,kBAAkBG,UAAU,oB","sources":["src/js/masc.js"],"sourcesContent":["$(document).ready(function () {\n  $('.mod-form__tel').inputmask('+38(099)999 99 99');\n});\n"],"names":["$","document","ready","inputmask"],"version":3,"file":"index.23491465.js.map"}
