@@ -11,12 +11,11 @@
   @media screen and (min-width: 480px) {
     min-width: 500px;
     min-height: 720px;
-}
+  }
 
   background-color: $Primary-yellow-main;
   border-radius: 30px;
   z-index: 100;
-
 
   visibility: visible;
   opacity: 1;
@@ -26,7 +25,7 @@
   margin-top: 30px;
 }
 
-.modal-overlay.is-hidden{
+.modal-overlay.is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -38,11 +37,11 @@
   left: 50%;
   transform: translate(-50%, -50%) scale(1) rotate(0);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-  0px 2px 1px rgba(0, 0, 0, 0.2);
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 30px;
   opacity: 1;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 200ms,
-  opacity 250ms cubic-bezier(0.4, 0, 0.2, 1) 200ms;
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1) 200ms;
 
   height: 100%;
   width: 100%;
@@ -129,7 +128,6 @@
   font-weight: 500;
   font-size: 14px;
   line-height: calc(16 / 14);
-
 }
 
 .modal-form__checkbox {
@@ -169,7 +167,7 @@
   border: 2px solid $Button-green;
   margin-top: 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-  0px 2px 1px rgba(0, 0, 0, 0.2);
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   cursor: pointer;
   outline: transparent;
   transform: translateX(37px);
@@ -177,4 +175,293 @@
 
 .modal-button {
   display: flex;
+}
+
+// Стили второй модалки
+
+.visually-hidden {
+  position: relative;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.backdrop {
+  z-index: 10;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  opacity: 1;
+  transition: opacity $cubic;
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+
+  visibility: hidden;
+  pointer-events: none;
+}
+.backdrop.is-hidden .mod {
+  transform: scale(0) rotate(0deg);
+}
+
+.mod {
+  position: absolute;
+  width: 320px;
+  top: 60px;
+  padding: 32px 20px;
+  transform: scale(1) rotate(360deg);
+  background-color: $Primary-yellow-main;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+
+  transition: transform $cubic;
+
+  @media screen and (min-width: $mobile) {
+    top: 98px;
+    width: 458px;
+  }
+  @media screen and (min-width: $desktop) {
+    top: 60px;
+  }
+}
+
+/* стили кнопки закрытия модольного окна */
+
+.close-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 30px;
+  height: 30px;
+
+  background-color: #ffffff;
+
+  border-radius: 50%;
+  border: transparent;
+
+  cursor: pointer;
+  transition: background-color $cubic;
+
+  &:hover,
+  &:focus {
+    background-color: #bbf330;
+  }
+}
+
+.mod__title {
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.2;
+  text-align: center;
+
+  color: $Black-text;
+}
+
+.mod__subtitle {
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.2;
+  text-align: center;
+
+  color: $Black-text;
+}
+
+.paymant {
+  margin-bottom: 15px;
+}
+
+.paymant__item {
+  @extend %list;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 10px;
+  border-radius: 30px;
+
+  @media screen and (min-width: $mobile) {
+    gap: 70px;
+  }
+}
+
+.paymant__list {
+  display: flex;
+  justify-content: center;
+
+  width: 120px;
+
+  border-radius: 30px;
+}
+
+.paymant__img {
+  width: 90px;
+  height: 90px;
+}
+
+.paymant__radio {
+  @extend %list;
+  display: flex;
+  justify-content: center;
+  gap: 120px;
+  @media screen and (min-width: $mobile) {
+    gap: 170px;
+  }
+}
+
+.paymant__radio--condition {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  fill: #ffffff;
+  background-color: #ffffff;
+  border: 2px solid #7eb101;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    border: 2px solid #bbf330;
+  }
+
+  .paymant__radio-input:checked + & {
+    fill: $Pink-cl-eror;
+    background-color: #bbf330;
+    border: 2px solid #ffffff;
+  }
+}
+
+.mod-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.mod-form__label {
+  margin-left: 12px;
+  margin-bottom: 2px;
+  left: 12px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.38;
+
+  color: $Black-text;
+}
+.input-warning__wrapper {
+  padding-bottom: 9px;
+}
+.mod-form__input {
+  padding: 12px 14px;
+
+  width: 100%;
+  height: 48px;
+
+  border: 2px solid #7eb101;
+  border-radius: 30px;
+  transition: border $cubic;
+
+  &:not(:placeholder-shown):not(:valid) + .warning .warning__valid {
+    display: block;
+  }
+
+  &:not(:placeholder-shown):not(:valid) {
+    border-color: $Pink-cl-eror;
+  }
+  &:placeholder-shown:required + .warning .warning__required {
+    display: block;
+  }
+  &:placeholder-shown:required {
+    border-color: $Pink-cl-eror;
+  }
+
+  &:placeholder-shown:required .form-btn {
+    border-color: $Pink-cl-eror;
+  }
+  &:hover,
+  &:focus {
+    outline: transparent;
+    border: 1px solid #bbf330;
+  }
+}
+
+.warning {
+  align-items: center;
+  gap: 4px;
+
+  padding-top: 3px;
+  &__valid {
+    display: none;
+  }
+  &__required {
+    display: none;
+  }
+
+  &__text-eror {
+    color: $Pink-cl-eror;
+    font-size: 12px;
+    line-height: 1.54;
+  }
+}
+
+.form-btn {
+  display: block;
+
+  margin-top: 8px;
+  margin-right: auto;
+  margin-left: auto;
+
+  padding: 10px 38px;
+
+  height: 40px;
+
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1.54;
+  text-align: center;
+
+  color: $Black-text;
+
+  border-radius: 30px;
+  border: 2px solid #7eb101;
+
+  cursor: pointer;
+  transition: background-color $cubic, border $cubic;
+
+  &:hover,
+  &:focus {
+    border: 2px solid #ffffff;
+    background-color: #bbf330;
+  }
+  &:disabled {
+    background-color: #a4a4a4;
+    border: 2px solid #a4a4a4;
+  }
 }
