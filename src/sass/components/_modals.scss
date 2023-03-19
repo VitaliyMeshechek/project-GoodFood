@@ -182,7 +182,7 @@
   display: flex;
 }
 
-// Стили второй модалки
+// Разметка модалки - "Order Form"
 
 .visually-hidden {
   position: relative;
@@ -211,7 +211,7 @@
   width: 100%;
   height: 100%;
   overflow-y: scroll;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: $Background-backdrop;
 
   opacity: 1;
   transition: opacity $cubic;
@@ -249,8 +249,6 @@
   }
 }
 
-/* стили кнопки закрытия модольного окна */
-
 .close-btn {
   position: absolute;
   top: 12px;
@@ -263,7 +261,7 @@
   width: 30px;
   height: 30px;
 
-  background-color: #ffffff;
+  background-color: $White;
 
   border-radius: 50%;
   border: transparent;
@@ -273,7 +271,7 @@
 
   &:hover,
   &:focus {
-    background-color: #bbf330;
+    background-color: $Button-green;
   }
 }
 
@@ -347,20 +345,20 @@
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  fill: #ffffff;
-  background-color: #ffffff;
-  border: 2px solid #7eb101;
+  fill: $White;
+  background-color: $White;
+  border: 2px solid $Green-text;
   cursor: pointer;
 
   &:hover,
   &:focus {
-    border: 2px solid #bbf330;
+    border: 2px solid $Button-green;
   }
 
   .paymant__radio-input:checked + & {
     fill: $Pink-cl-eror;
-    background-color: #bbf330;
-    border: 2px solid #ffffff;
+    background-color: $Button-green;
+    border: 2px solid $White;
   }
 }
 
@@ -389,7 +387,7 @@
   width: 100%;
   height: 48px;
 
-  border: 2px solid #7eb101;
+  border: 2px solid $Green-text;
   border-radius: 30px;
   transition: border $cubic;
 
@@ -413,7 +411,7 @@
   &:hover,
   &:focus {
     outline: transparent;
-    border: 1px solid #bbf330;
+    border: 1px solid $Button-green;
   }
 }
 
@@ -455,18 +453,18 @@
   color: $Black-text;
 
   border-radius: 30px;
-  border: 2px solid #7eb101;
+  border: 2px solid $Green-text;
 
   cursor: pointer;
   transition: background-color $cubic, border $cubic;
 
   &:hover,
   &:focus {
-    border: 2px solid #ffffff;
-    background-color: #bbf330;
+    border: 2px solid $White;
+    background-color: $Button-green;
   }
   &:disabled {
-    background-color: #a4a4a4;
-    border: 2px solid #a4a4a4;
+    background-color: $Button-disabled;
+    border: 2px solid inherit;
   }
 }
