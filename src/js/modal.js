@@ -32,15 +32,12 @@
 //   document.body.removeEventListener('keydown', event => closeModalEscape(event));
 // }
 
-// function closeModalEscape(event) {
-//   if (event.key === 'Escape') {
-//
-//   return;
-//
-//   }
-//
-//   toggleModal();
-// }
+function closeModalEscape(event) {
+  if (event.code === 'Escape') {
+  }
+
+  toggleModal();
+}
 
 
 
