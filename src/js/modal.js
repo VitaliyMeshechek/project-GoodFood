@@ -24,6 +24,7 @@
   refs.paymentCashBtn.addEventListener('click', toggleDisabled);
   refs.paymentVisaBtn.addEventListener('click', toggleDisabled);
 
+
   function toggleModal() {
     refs.modal.classList.toggle('is-hidden');
     refs.body.classList.toggle('modal-open');
@@ -46,21 +47,15 @@
   }
 })();
 
-// function closeModal() {
 
-//   document.body.removeEventListener('keydown', event => closeModalEscape(event));
+// function closeModalEscape(event) {
+//   if (event.code === 'ESC') {
+//     toggleModal();
+//   }
 // }
 
-function closeModalEscape(event) {
-  if (event.code === 'Escape') {
-  }
-
-  toggleModal();
-}
-
 // function closeModalBackdrop(event) {
-//   if (event.target.classList.value !== 'modal-overlay') {
-//     return;
+//   if (event.target === refs.modalBackdrop) {
 //   }
 //   toggleModal();
 // }

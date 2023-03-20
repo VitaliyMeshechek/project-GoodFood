@@ -132,6 +132,10 @@ body{
     background-color: #fff;
     transition: $cubic all;
     overflow: hidden;
+
+    @media screen and (min-width:768px) {
+      display: none;
+  }
 }
 
 .modal.is-hidden-menu {
