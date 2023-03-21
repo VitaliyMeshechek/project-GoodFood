@@ -165,14 +165,6 @@
   .modal-form__icon--check {
   opacity: 1;
 
-  &:placeholder-shown:required .btn-order {
-    border-color: $Pink-cl-eror;
-  }
-  &:hover,
-  &:focus {
-    outline: transparent;
-    border: 1px solid #bbf330;
-  }
 }
 
 
