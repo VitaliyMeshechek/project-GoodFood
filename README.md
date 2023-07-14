@@ -1,101 +1,57 @@
-**Read in other languages: [Русский](README.md), [Polski](README.pl.md).**
+# FoodSta
 
-# Parcel template
+## Description
 
-Этот проект был создан при помощи Parcel. Для знакомства и настройки
-дополнительных возможностей [обратись к документации](https://parceljs.org/).
+"FoodSta" is a one-page web app for ordering food online with feedback sections,
+gallery slider and checkout form.
 
-## Подготовка нового проекта
+## Terms of reference:
 
-1. Убедись что на компьютере установлена LTS-версия Node.js.
-   [Скачай и установи](https://nodejs.org/en/) её если необходимо.
-2. Склонируй этот репозиторий.
-3. Измени имя папки с `parcel-project-template` на имя своего проекта.
-4. Создай новый пустой репозиторий на GitHub.
-5. Открой проект в VSCode, запусти терминал и свяжи проект с GitHub-репозиторием
-   [по инструкции](https://docs.github.com/en/get-started/getting-started-with-git/managing-remote-repositories#changing-a-remote-repositorys-url).
-6. Установи зависимости проекта в терминале командой `npm install` .
-7. Запусти режим разработки, выполнив команду `npm start`.
-8. Перейди в браузере по адресу [http://localhost:1234](http://localhost:1234).
-   Эта страница будет автоматически перезагружаться после сохранения изменений в
-   файлах проекта.
+It is a team project made according to the layout
+[FoodSta](https://www.figma.com/file/NBoRDp36hsO3KHq6iVPLjZ/food-delivery-service?type=design&node-id=480-4028&mode=design&t=o7y70pX4OMqMM2Kg-0)
 
-## Файлы и папки
+1. Development of a one-page website for FoodSta.
+2. The layout is adaptive, except for mobile devices.
+3. Breakpoints: mobile: 480px; tablet: 768px; desktop: 1280px;
+4. The site should be viewed correctly in all possible browser window sizes and
+   devices, starting from 320px wide, both in portrait and landscape
+   orientation.
+5. The layout should be tested on a validator - (https://validator.w3.org/,
+   https://validator.w3.org/unicorn/)
+6. Compliance with semantics in accordance with HTML5 standards.
+7. Optimize the size of vector and raster graphics
+8. Support for displaying images for retina screens
+9. Optimize image loading.
+10. Add the display of page favicon.
 
-- Все паршалы файлов стилей должны лежать в папке `src/sass` и импортироваться в
-  файлы стилей страниц. Например, для `index.html` файл стилей называется
-  `index.scss`.
-- Изображения добавляй в папку `src/images`. Сборщик оптимизирует их, но только
-  при деплое продакшн версии проекта. Все это происходит в облаке, чтобы не
-  нагружать твой компьютер, так как на слабых машинах это может занять много
-  времени.
+## Project structure.
 
-## Деплой
+Header Hero Offerings Favorites Customers Say Subscribe Footer
 
-Для настройки деплоя проекта необходимо выполнить несколько дополнительных шагов
-по настройке твоего репозитория. Зайди во вкладку `Settings` и в подсекции
-`Actions` выбери выбери пункт `General`.
+## Project objectives:
 
-![GitHub actions settings](./assets/actions-config-step-1.png)
+1. To consolidate knowledge of HTML and CSS/SASS;
+2. Worked with Parcel;
+3. Practice teamwork skills with Git;
+4. Practicing skills in using the Scrum methodology;
+5. Practice skills in using Trello for planning, prioritizing tasks and
+   optimizing work;
+6. Practice skills in using the Animate.css library;
+7. Practice skills in using the SwiperJS library to develop a slider;
 
-Пролистай страницу до последней секции, в которой убедись что выбраны опции как
-на следующем изображении и нажми `Save`. Без этих настроек у сборки будет
-недостаточно прав для автоматизации процесса деплоя.
+## Installation
 
-![GitHub actions settings](./assets/actions-config-step-2.png)
+1. Clone the repository: `https://github.com/Oleg-Strong/team-project-Good_Food`
+2. Open the project in the code editor
+3. In the terminal, install the dependencies with the command: `npm install`
 
-Продакшн версия проекта будет автоматически собираться и деплоиться на GitHub
-Pages, в ветку `gh-pages`, каждый раз когда обновляется ветка `main`. Например,
-после прямого пуша или принятого пул-реквеста. Для этого необходимо в файле
-`package.json` отредактировать поле `homepage` и скрипт `build`, заменив
-`your_username` и `your_repo_name` на свои, и отправить изменения на GitHub.
+## Usage
 
-```json
-"homepage": "https://your_username.github.io/your_repo_name/",
-"scripts": {
-  "build": "parcel build src/*.html --public-url /your_repo_name/"
-},
-```
+1. Run the application: `npm start`
+2. Open your web browser and visit: `http://localhost:1234/`
 
-Далее необходимо зайти в настройки GitHub-репозитория (`Settings` > `Pages`) и
-выставить раздачу продакшн версии файлов из папки `/root` ветки `gh-pages`, если
-это небыло сделано автоматически.
+## Contact
 
-![GitHub Pages settings](./assets/repo-settings.png)
-
-### Статус деплоя
-
-Статус деплоя крайнего коммита отображается иконкой возле его идентификатора.
-
-- **Желтый цвет** - выполняется сборка и деплой проекта.
-- **Зеленый цвет** - деплой завершился успешно.
-- **Красный цвет** - во время линтинга, сборки или деплоя произошла ошибка.
-
-Более детальную информацию о статусе можно посмотреть кликнув по иконке, и в
-выпадающем окне перейти по ссылке `Details`.
-
-![Deployment status](./assets/status.png)
-
-### Живая страница
-
-Через какое-то время, обычно пару минут, живую страницу можно будет посмотреть
-по адресу указанному в отредактированном свойстве `homepage`. Например, вот
-ссылка на живую версию для этого репозитория
-[https://goitacademy.github.io/parcel-project-template](https://goitacademy.github.io/parcel-project-template).
-
-Если открывается пустая страница, убедись что во вкладке `Console` нет ошибок
-связанных с неправильными путями к CSS и JS файлам проекта (**404**). Скорее
-всего у тебя неправильное значение свойства `homepage` или скрипта `build` в
-файле `package.json`.
-
-## Как это работает
-
-![How it works](./assets/how-it-works.png)
-
-1. После каждого пуша в ветку `main` GitHub-репозитория, запускается специальный
-   скрипт (GitHub Action) из файла `.github/workflows/deploy.yml`.
-2. Все файлы репозитория копируются на сервер, где проект инициализируется и
-   проходит сборку перед деплоем.
-3. Если все шаги прошли успешно, собранная продакшн версия файлов проекта
-   отправляется в ветку `gh-pages`. В противном случае, в логе выполнения
-   скрипта будет указано в чем проблема.
+- Name: Oleh Yevdokymov (https://github.com/Oleg-Strong)
+- Email: o.evdokimov.dev@gmail.com
+- Project Link: (https://oleg-strong.github.io/team-project-Good_Food/)
